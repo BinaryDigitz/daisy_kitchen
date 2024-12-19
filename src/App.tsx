@@ -25,7 +25,7 @@ const [ filterProduct, setFilterProduct ] = useState('')
     
     <BrowserRouter>
       <div id="app" className="relative trans">
-        <div className={`${showSidebar } md:hidden bg-[var(--secondary-color)] absolute top-0 left-0 z-50 h-[100dvh] w-2/4  trans `}>
+        <div className={`${showSidebar } md:hidden bg-[var(--secondary-color)] absolute top-0 left-0 z-50 h-[100dvh] w-3/4  trans rounded-r-full`}>
             <Sidebar/>
         </div>
           <header id="">

@@ -3,7 +3,7 @@
 function About() {
   return (
     <section >
-        <div className=" relative about-content text-[var(--black-color2)]  rounded-xl shadow-lg bg-[rgba(000.000.000.01)] ">
+        <div className=" relative about-content text-[var(--black-color2)]  rounded-xl shadow-lg green_bg ">
           <img src="./photos/eggSalad.jpg" className='absolute  top-0 opacity-30 size-full object-cover' alt="" />
            <div className='p-5'>
             <h1 className='text-center text-2xl p-5 text-[var(--secondary-color)] font-bold '>About Us</h1>

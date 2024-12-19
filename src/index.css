@@ -80,9 +80,7 @@
   
   }
   
-  .hero{
-    /* background: linear-gradient(45deg, var(--secondary-color) , var(--primary-color)  , var(--secondary-color) ); */
-  }
+  
   h1 {
     font-size: 1.2em;
     line-height: 1.1;
@@ -116,6 +114,9 @@
       background-color: #f9f9f9;
     }
   } */
+   .green_bg{
+    background-color: #25230417;
+   }
    input{
     border: 1px solid var(--primary-color);
     padding: 2px;
@@ -142,7 +143,7 @@
   }
   .cake_icon_one{
     transition: all 300ms ease;
-    animation: cake_one 5s infinite alternate;
+    animation: cake_one 5s ;
   }
   @keyframes cake_one {
     0%{
@@ -158,20 +159,8 @@
       opacity: 1;
     }
   }
-  .cake_icon_opacity{
-    animation: opacity 5s infinite alternate;
-  }
-  @keyframes opacity {
-    0%{
-      opacity: 0;
-    }
-    50%{
-      opacity: 1;
-    }
-    100%{
-      opacity: 0;
-    }
-  }
+  
+
   .hero_image{
     animation: hero_image 1s ;
   }

@@ -1,9 +1,9 @@
-
+import PlaceOrder from "./PlaceOrder"
 
 function Services() {
   return (
     <div>
-      servce
+      <PlaceOrder />
     </div>
   )
 }

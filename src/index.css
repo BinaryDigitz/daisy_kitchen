@@ -172,4 +172,56 @@
       opacity: 0;
     }
   }
+  .hero_image{
+    animation: hero_image 1s ;
+  }
+  @keyframes hero_image {
+    from{
+      transform: scale(0.8);
+      opacity:0.3;
+    }
+    to{
+      transform: scale(1);
+      opacity:1;
+    }
+  }
+  .hero_button{
+    animation: hero_button 1s ;
+  }
+  @keyframes hero_button {
+    from{
+      translate:0 10rem;
+      opacity:0;
+    }
+    to{
+      translatex:0 0px;
+      opacity:1;
+    }
+  }
+  .hero_text_one{
+    animation: hero_text_one 1s ;
+  }
+  @keyframes hero_text_one {
+    from{
+      translate: 10rem 0;
+      opacity:0;
+    }
+    to{
+      translatex:0 0;
+      opacity:1;
+    }
+  }
+  .hero_text_two{
+    animation: hero_text_two 1s ;
+  }
+  @keyframes hero_text_two {
+    from{
+      translate: -10rem 0;
+      opacity:0;
+    }
+    to{
+      translatex:0 0;
+      opacity:1;
+    }
+  }
   

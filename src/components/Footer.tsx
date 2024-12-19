@@ -46,8 +46,8 @@ function Footer() {
         <h3 className="text-sm font-bold md:text-lg lg:py-0 p-1">Socials</h3>
           <ul>
             {socialLink.map(item => <li className="text-sm p-1 py-2  opacity-80 hover:opacity-100 trans" key={item.name}>
-              <a href={item.link} target="_blank" rel="noreferrer">
-              <span className="">{item.icon}</span>
+              <a href={item.link} target="_blank" rel="noreferrer" className="flex gap-2 items-center">
+              <span className="size-5">{item.icon}</span>
               <p className="">{item.name}</p>
               </a>
             </li>)}

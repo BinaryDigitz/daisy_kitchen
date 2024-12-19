@@ -1,7 +1,8 @@
 
 import { socialLink, company } from "../data"
+import DeveloperLinks from "./DeveloperLinks"
 function Footer() {
-    const DeveloperLink = "https://binarydigitz.com"
+   
     
   return (
     <section className='relative flex flex-col md:flex-row gap-10 md:justify-around bg-[var(--secondary-color)] text-white p-5'>
@@ -55,8 +56,7 @@ function Footer() {
        </div>
      <span className="absolute bottom-0 flex justify-around items-center gap-2 text-xs p-2">
        <p className=" text-center text-xs p-2">© 2024 Daisy kitchen</p>
-       <a href={DeveloperLink} target="_blank" rel="noreferrer" className="flex items-center gap-1"> developed by: Binary digitz</a>
-
+       <DeveloperLinks />
      </span>
     </section>
   )

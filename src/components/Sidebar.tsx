@@ -15,7 +15,7 @@ function Sidebar() {
     <section className=" flex flex-col  p-4 mt-4">
       {
         asideItems.map(item => (
-          <Link to={item.link} key={item.name} className="flex items-center opacity-80 py-1 my-1 shadow-md  hover:opacity-100 rounded-md hover:bg-[var(--primary-color)] trans">
+          <Link to={item.link} key={item.name} className="flex w-full items-center opacity-80 py-1 my-1 shadow-md  hover:opacity-100 rounded-md hover:bg-[var(--primary-color)] trans">
             <span  className="material-icons size-10 grid place-items-center">{item.icon}</span>
             <span onClick={appContext?.closeAllMenues} className='px-2 w-full'>{item.name}</span>
           </Link>

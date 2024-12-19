@@ -16,6 +16,6 @@ export const socialLink = [
       {name: 'Facebook',icon:<Facebook/>, link: 'https://facebook.com'},
       {name: 'WhatsApp', icon:<WhatsApp/>, link: 'https://whatsapp.com'},
       {name: 'YouTube', icon:<YouTube/> , link: 'https://youtube.com'},
-      {name: 'Instagram', icon:<Instagram/>, link: 'https://instagram.com'},
+      {name: 'Instagram', icon:<Instagram/>, link: 'http://192.168.212.80:5173/'},
       {name: 'Tiktok', icon:<Tiktok/>, link: 'https://tiktok.com'},
     ]

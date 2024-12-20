@@ -1,18 +1,21 @@
 import { useState } from "react"
 import { ListGroup, OrderForm } from "./exportComp"
+import type { OrderFormType } from "../types"
 
 
 
 const PlaceOrder = () => {
- const [items, setItems ] = useState([
-  {id:1, name: "Rice", unitPrice: 200, amount: 22000},
-  {id:2, name: "Beans", unitPrice: 300, amount: 32000},
-  {id:3, name: "Yam", unitPrice: 500, amount: 52000},
-])
-     
+  
+ const [items, setItems ] = useState<OrderFormType[]>([])
+    
+     function handleSubmit(item: OrderFormType){
+      const addId = [...items, item].map((item, index) => ({...item, id: index + 1}))
+      setItems(addId)
+      }
   return (
     <section className="text-[var(--black-color2)] h-screen">
-      <OrderForm/>
+      <OrderForm onSubmit={(item) => handleSubmit(item)
+      } />
       <ListGroup items={items} onDelete={(id) => setItems(items.filter(item => item.id !== id))
       }/>
     </section>

@@ -7,3 +7,12 @@ export interface ProductTypes {
     category: string;
     score: number;
 }
+export interface OrderFormType {
+    id?:number;
+    productName: string;
+    unitPrice: number;
+    numberOfGuest: number;
+    deliveryFee?: number;
+    location?: string;
+    colection?: string;
+  }

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ListGroup } from "./exportComp"
+import { ListGroup, OrderForm } from "./exportComp"
 
 
 
@@ -12,6 +12,7 @@ const PlaceOrder = () => {
      
   return (
     <section className="text-[var(--black-color2)] h-screen">
+      <OrderForm/>
       <ListGroup items={items} onDelete={(id) => setItems(items.filter(item => item.id !== id))
       }/>
     </section>

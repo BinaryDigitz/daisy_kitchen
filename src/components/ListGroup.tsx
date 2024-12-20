@@ -8,26 +8,26 @@ const ListGroup = ({items, onDelete}: Props) => {
     if(items.length === 0) return null
     const totalAmount = items.reduce((acc, item) => acc + (item.unitPrice * item.numberOfGuest), 0)
   return (
-    <table className=" shadow-md rounded-sm text-center">
+    <table className=" shadow-md rounded-sm text-center w-[90%] mx-auto rounded-md lg:w-[40%] hero_image">
         <thead className=" ">
-            <tr className="bg-slate-200 px-6 text-sm lg:text-[16px]">
-                <th className="py-8 px-4 ">SN</th>
-                <th className="py-8 px-4 ">Name</th>
-                <th className="py-8 px-4 flex flex-col">Unit Price <span className="text-xs">for 5 guests</span></th>
-                <th className="py-8 px-4">Amount</th>
+            <tr className="bg-slate-200  text-sm lg:text-[16px] opacity-70">
+                <th className="py-3 px-1 ">SN</th>
+                <th className="py- px-1 ">Name</th>
+                <th className="py- px-1 ">Unit Price </th>
+                <th className="py- ">Amount</th>
                 <th></th>
             </tr>
             
         </thead>
         <tbody>
                 {items.map((item, index) => (
-                    <tr className="bg-slate-100 border text-sm lg:text-[16px]"  key={item.id}>
-                        <td className="py-5 ">{index + 1}</td>
+                    <tr className="bg-slate-50 border text-sm lg:text-[16px] opacity-80 "  key={item.id}>
+                        <td className="py-4 ">{index + 1}</td>
                         <td>{item.productName}</td>
                         <td>{item.unitPrice.toFixed(2)} </td>
                         <td>{(item.unitPrice * item.numberOfGuest).toLocaleString()}</td>
                         <td className="pr-4">
-                            <button className="opacity-80 hover:opacity-100 text-danger outline outline-[var(--danger)] p-1 px-2 rounded-sm shadow-md lg:p-2 lg:px-3" onClick={() => {
+                            <button className="hover:opacity-80 text-danger outline outline-[var(--danger)] p-1 px-2 rounded-sm shadow-md lg:p-2 lg:px-3" onClick={() => {
                                 if(item.id){
                                     const confirm = window.confirm(`Delete ${item.productName} from the list?`)
                                     if(!confirm) return
@@ -39,7 +39,7 @@ const ListGroup = ({items, onDelete}: Props) => {
                 ))}
             </tbody>
             <tfoot>
-                <tr className="bg-slate-200 ">
+                <tr className="bg-slate-100 ">
                     <th></th>
                     <th></th>
                     <th>Total:</th>

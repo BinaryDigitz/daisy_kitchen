@@ -68,12 +68,13 @@ const OrderForm = ({ onSubmit}: Props) => {
         colection:  ''
       })
     }
+    const disableButton = item.unitPrice < 1 || item.numberOfGuest < 1
   return (
     <form onSubmit={(event =>{
       event.preventDefault()
       handleSubmit()
-    })} className="p-4 border border-red-100 w-[80%] text-sm m-auto my-8 rounded-md shadow-md flex flex-col">
-        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex ">
+    })} className="p-4 border border-red-100 w-[90%] lg:w-[40%] text-sm m-auto my-8 rounded-md shadow-md flex flex-col">
+        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex py-2 ">
             <label htmlFor="productName" className="opacity-90 flex- w-2/4">Food type:</label>
             <select className="w-2/4 bg-slate-50 "  value={item.productName} onChange={event => setItem({...item, productName: event.target.value})} id="productName">
                 <option value="">Please select </option>
@@ -82,11 +83,11 @@ const OrderForm = ({ onSubmit}: Props) => {
                }
             </select>
         </div>
-        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex items-center ">
+        <div className="mb-3 border p-1 px-2 lg:py-2 rounded-md shadow-sm flex items-center ">
                <label className="opacity-90 flex- w-2/4" htmlFor="unitPrice">Price for 5 guests</label>
                <input className="w-2/4 bg-slate-50" type="number" value={item.unitPrice.toFixed(2)} />
         </div>
-        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex ">
+        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex py-2 ">
                <label className="opacity-90 flex- w-2/4" htmlFor="quantity">Number of guest:</label>
                <select className="w-2/4 bg-slate-50  "  id="quantity" value={item.numberOfGuest} onChange={event => setItem({...item, numberOfGuest: Number(event.target.value)})}>
                <option value="">Please select</option>
@@ -96,7 +97,7 @@ const OrderForm = ({ onSubmit}: Props) => {
                </select>
 
         </div>
-        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex ">
+        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex py-2 ">
           <label className="opacity-90 flex- w-2/4" htmlFor="transportaion">Means of collection</label>
             <select  id="transportation" className="w-2/4 bg-slate-50 "value={item.colection} onChange={event => setItem({...item, colection: event.target.value})}>  
               <option value="">Please select</option>
@@ -106,7 +107,7 @@ const OrderForm = ({ onSubmit}: Props) => {
               <option value="catering">Catering at your place</option>
             </select>
         </div>
-        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex ">
+        <div className="mb-3 border p-1 px-2 rounded-md shadow-sm flex py-2 ">
           <label className="opacity-90 flex- w-2/4" htmlFor="location">Location</label>
             <select disabled={item.colection === "pickup"}  id="location" className="w-2/4 bg-slate-50  " value={item.location} onChange={event => setItem({...item, location: event.target.value})}>
               <option value="">Please select</option>
@@ -116,14 +117,16 @@ const OrderForm = ({ onSubmit}: Props) => {
               <option value="yaounde" disabled>Yaounde</option>
             </select>
         </div>
+        <div className="min-h-10">
         {
-          item.numberOfGuest !== 0 && <div className="hero_image min-h-10">
+          item.numberOfGuest !== 0 && item.unitPrice !== 0 && <div className="hero_image min-h-10">
           Total cost: {item.deliveryFee ? (item.unitPrice * item.numberOfGuest) + item.deliveryFee.toLocaleString() : (item.unitPrice * item.numberOfGuest).toLocaleString()
           }<span> fCFA</span>
         </div>
         }
+        </div>
       
-      <button className="w-1/2 mx-auto  opacity-80 border bg-[var(--primary-color)] p-1 rounded-2xl text-white">Add to cart</button>
+      <button disabled={disableButton} className={`w-1/2 mx-auto  opacity-80 border bg-[var(--primary-color)] p-1 py-2 shadow-md rounded-2xl text-white ${disableButton ? "opacity-50" : '' } trans`}>Add to cart</button>
       
     </form>
   )

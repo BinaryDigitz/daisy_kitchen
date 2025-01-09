@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ListGroup, OrderForm } from "./exportComp"
+import { Collection, ListGroup, OrderForm } from "./exportComp"
 import type { OrderFormType } from "../types"
 
 
@@ -18,6 +18,7 @@ const PlaceOrder = () => {
       } />
       <ListGroup items={items} onDelete={(id) => setItems(items.filter(item => item.id !== id))
       }/>
+      <Collection />
     </section>
   )
 }

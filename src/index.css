@@ -89,7 +89,9 @@
     opacity: 1;
    }
   
-  
+  }
+  .tone_primary_color{
+    background-color: rgba(210, 4, 45, 0.075);
   }
   .rounded-top{
     border-top-left-radius: 20px;

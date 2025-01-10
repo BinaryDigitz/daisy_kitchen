@@ -79,7 +79,15 @@
    
 
    background: var(--lightgradient-color) no-repeat;
-   
+    
+   .hover_item{
+    opacity: 0;
+    cursor: pointer;
+    transition: all 300ms ease;
+   }
+   .hover_container:hover .hover_item{
+    opacity: 1;
+   }
   
   
   }

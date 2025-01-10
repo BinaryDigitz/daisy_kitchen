@@ -21,7 +21,7 @@
   --white-color:#FDFCED;
   --black-color2:#373406;
   --black-color1:#252304;
-  --black-color:#fff;
+  --black-color:#373406;
 
   --danger-color:#fc3434;
   --warning-color:#eeee1a;
@@ -53,6 +53,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .trans-black{
+    background-color: rgba(0,0,0, 0.1);
+  }
   
   a {
     font-weight: 500;
@@ -80,8 +83,13 @@
   
   
   }
-  
-  
+  .rounded-top{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .backdrop{
+    backdrop-filter: blur(4px);
+  }
   h1 {
     font-size: 1.2em;
     line-height: 1.1;

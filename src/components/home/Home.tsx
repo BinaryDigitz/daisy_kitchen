@@ -1,4 +1,4 @@
-import { About, LandingPage, Counts, Assurance } from "../exportComp"
+import {  LandingPage, Counts, Assurance, AboutBlog } from "../exportComp"
 
 
 
@@ -6,9 +6,9 @@ function Home() {
   return (
     <section>
         <LandingPage/>
-        <Counts/>
         <Assurance/>
-        <About/>
+        <Counts/>
+        <AboutBlog/>
       
     </section>
   )

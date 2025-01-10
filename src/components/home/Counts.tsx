@@ -7,13 +7,16 @@ const countsDetails = [
 ]
 const Counts = () => {
   return (
-    <section className="bg-[#3734060c] text-black grid grid-cols-2 md:grid-cols-4 place-items-center gap-4 mt-3 h-[300px] rounded-xl shadow-md ">
+    <section className="trans-blak text-black grid grid-cols-2 md:grid-cols-4 place-items-center gap-4 mt-3 h-[300px] rounded-xl shadow-lg ">
       {
         countsDetails.map((count, index) => <div key={index} className="flex items-center gap-2  rounded-sm w-[150px]">
             <span className="opacity-80">{count.icon}</span>
             <div className="text-center">
                 <p className="text-xl font-bold opacity-80 md:text-3xl">{count.total}</p>
                 <p className="opacity-60">{count.name}</p>
+            </div>
+            <div>
+              
             </div>
         </div>)
       }

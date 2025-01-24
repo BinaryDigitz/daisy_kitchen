@@ -1,4 +1,6 @@
+import { Back, PlaceOrder } from "../exportComp";
 import WhatsApp from "../Icons/WhatsApp";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   const contactDetails = [
@@ -50,23 +52,31 @@ function Contact() {
     },
   ];
   return (
-    <section className="grid place-items-center p-5 pt-8 h-screen ">
-      <div className="flex flex-col gap-3 text-center backdrop border-2 border-gray-300 p-5 rounded-xl shadow-md">
+   <section className="lightBg relative"> 
+   <div className="">
+    <Back link={"/"}/>
+   </div>
+    <h1 className="text-center text-3xl font-bold py-8">Contact us</h1>
+       <div className="flex flex-col lg:flex-row justify-around  pt-8 h-screen  ">
+      <div className="flex flex-col gap-3 text-center backdrop p-5 w-[90%] mx-auto lg:w-[400px] h-[200px] lg:p-10 rounded-xl shadow-md">
+      
         {contactDetails.map((contact) => (
           <div
             key={contact.name}
-            className="flex gap-2 hover:cursor-pointer"
+            className="flex gap-2 hover:cursor-pointer hover:bg-gray-200  rounded-lg hover:underline trans"
             title={` Click to ${contact.name}`}
           >
-            <p>{contact.icon}</p>
+            <span>{contact.icon}</span>
             <p>{contact.value}</p>
           </div>
         ))}
       </div>
       <div>
-        
+        <ContactForm />
       </div>
-    </section>
+    </div>
+    <PlaceOrder/>
+   </section>
   );
 }
 

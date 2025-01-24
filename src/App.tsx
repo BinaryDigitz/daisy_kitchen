@@ -11,6 +11,7 @@ const App = () => {
 const [ data, setData ] = useState<ProductTypes[]>(products)
 const [ filterProduct, setFilterProduct ] = useState('')
   
+  
     const appContext = useContext(AppContext)
     useEffect(() => {
       if(filterProduct === ''){
@@ -28,8 +29,8 @@ const [ filterProduct, setFilterProduct ] = useState('')
         <div className={`${showSidebar } md:hidden bg-[var(--secondary-color)] absolute top-0 left-0 z-50 h-[100dvh] w-3/4  trans rounded-r-full overflow-hidden`}>
             <Sidebar/>
         </div>
-          <header id="">
-            <Navbar/>
+          <header >
+            <Navbar data={data}/>
           </header>
           <main id="main">
             

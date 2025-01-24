@@ -279,7 +279,7 @@ export const products: ProductTypes[] = [
   
     //ANNIVERSARY
 {
-    id: '31',
+    id: '61',
     name: "His for ever",
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
@@ -288,7 +288,7 @@ export const products: ProductTypes[] = [
     score: 4.3
 },
 {
-    id: '32',
+    id: '62',
     name: "Love is gold",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
@@ -297,7 +297,7 @@ export const products: ProductTypes[] = [
     score: 4.3
 },
 {
-    id: '33',
+    id: '63',
     name: "Prince charmx",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
@@ -305,7 +305,7 @@ export const products: ProductTypes[] = [
     category: 'anniversary',
     score: 3.3
 },{
-    id: '34',
+    id: '64',
     name: "Angelina spring",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 

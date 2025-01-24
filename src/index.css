@@ -41,7 +41,7 @@
 
     --navbarGradient:linear-gradient(45deg, var(--primary-color-tone)  , var(--secondary-color) );
 
-    --lightgradient-color:linear-gradient(20deg, var(--lightground-color) , var(--primary-color-tone) );
+    --lightgradient-color:linear-gradient(200deg, var(--lightground-color) , var(--primary-color-tone) );
     --darkgradient-color:linear-gradient(45deg, var(--blackground-color) , var(--black-color2) );
   
    
@@ -69,15 +69,18 @@
   .agu-font{
     font-family: 'Agu Display', sans-serif;
   }
+  .navbar{
+    background: var(--navbarGradient);
+  }
+  .lightBg{
+    background: var(--lightgradient-color);
+  }
     body {
     color:var(--black-color1);
    font-size: 1rem;
    font-family: "Roboto", sans-serif;
-  
-
    color: var(--black-color);
-   
-
+  
    background: var(--lightgradient-color) no-repeat;
     
    .hover_item{
@@ -136,8 +139,8 @@
    .green_bg{
     background-color: #25230417;
    }
-   input{
-    border: 1px solid var(--primary-color);
+   input, textarea, select{
+    border: 1px solid gray;
     padding: 2px;
     padding-left: 10px;
     border-radius: 3px;

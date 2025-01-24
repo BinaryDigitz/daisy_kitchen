@@ -18,7 +18,7 @@ const PlaceOrder = () => {
       } />
       <ListGroup items={items} onDelete={(id) => setItems(items.filter(item => item.id !== id))
       }/>
-      <Collection />
+      <Collection /> 
     </section>
   )
 }

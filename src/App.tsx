@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { About, Contact,  Footer, Kitchen, Home, Navbar, Services, Sidebar } from "./components/exportComp"
+import { About, Contact,  Footer, Kitchen, Home, Navbar, Sidebar } from "./components/exportComp"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
 import './my_css.css'
@@ -7,6 +7,7 @@ import { useContext } from "react"
 import { AppContext } from "./providers/Context";
 import { ProductTypes } from "./types"
 import { products } from "./database"
+import Training from "./components/home/Training"
 
 const App = () => {
 const [ data, setData ] = useState<ProductTypes[]>(products)
@@ -41,7 +42,7 @@ const [ filterProduct, setFilterProduct ] = useState('')
                 } />}/>
                 <Route path="/about" element={<About/>}/>
                 <Route path="/contact" element={<Contact/>}/>
-                <Route path="/services" element={<Services/>}/>
+                <Route path="/training" element={<Training/>}/>
                 <Route path="*" element={<h1>Not Found</h1>}/>
               </Routes>
           </main>

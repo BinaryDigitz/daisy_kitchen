@@ -10,7 +10,7 @@ function ContactBlog() {
      
       <Link to="/contact" >
         <h3 className="heading3">CONTACT INFORMATION</h3>
-        <p className="paragraph1 opacity-80 mb-[var(--xl-margin)]">Our team is always ready to reply your messages</p>
+        <p className="paragraph1 opacity-80 mb-[var(--xl-margin)] opacity-80">Our team is always ready to reply your messages</p>
       </Link>
       
     <div className="flex flex-col lg:flex-row justify-around  ">

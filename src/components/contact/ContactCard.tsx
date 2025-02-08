@@ -51,7 +51,7 @@ function ContactCard() {
         },
       ];
   return (
-    <section className="flex border border-[var(--black-color)] flex-col gap-3 text-center backdrop p-5 w-[90%] mx-auto lg:w-[400px] h-[200px] lg:p-10 rounded-xl shadow-md">
+    <section className="flex border border-[var(--black-color)] flex-col gap-3 text-center backdrop p-5 w-[90%] mx-auto lg:w-[450px] lg:h-[250px] lg:p-10 rounded-xl shadow-md">
       
         {contactDetails.map((contact) => (
           <div

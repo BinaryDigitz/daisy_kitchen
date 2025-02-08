@@ -4,9 +4,9 @@ function NavbarItems() {
     const navItems = [
     {name: 'Home', link: '/'},
     {name: 'Kitchen', link: '/kitchen'},
-    {name: 'Services', link: '/services'},
-    {name: 'About', link: '/about'},
-    {name: 'Contact', link: '/contact'},
+    {name: 'Training', link: '/training'},
+    {name: 'About us', link: '/about'},
+    {name: 'Contact us', link: '/contact'},
     ]
   return (
     <section className=" space-x-4 hidden md:flex ">

@@ -3,14 +3,16 @@ import TestimonialBlog from "./TestimonialBlog"
 
 
 
+
 function Home() {
   return (
-    <section>
+    <section className="overflow-hidden">
         <LandingPage/>
         <Assurance/>
         <Counts/>
         <AboutBlog/>
         <TestimonialBlog/>
+        {/* <Training/> */}
         <ContactBlog />
       
     </section>

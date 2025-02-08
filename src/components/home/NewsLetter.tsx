@@ -15,7 +15,7 @@ function NewsLetter() {
             setEmail('')
         }} className="flex justify-center items-center space-x-4 py-4">
             <input type="email" value={email} onChange={event => setEmail(event.target.value)} className="input" placeholder="Email Address"/>
-            <button disabled={disableButton} className="btn button2 bg-[var(--primary-color)] px-5 text-[var(--white-color)] rounded-md">SUBSCRIBE</button>
+            <button disabled={disableButton} className="button2 bg-[var(--primary-color)] px-5 py-2 text-[var(--white-color)] rounded-md">SUBSCRIBE</button>
         </form>
       
     </section>

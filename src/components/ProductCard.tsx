@@ -18,7 +18,7 @@ function ProductCard({product}: Props) {
   return (
     <div className=" w-[180px] md:w-[300px] h-[350px] z-0 bg-[var(--white-color)] rounded-md shadow-md overflow-hidden relative trans ">
       {
-        isAdded && <span title="Go to cart" className="absolute right-0 cursor-pointer  font-bold size-6 grid place-items-center text-md shadow-md rounded-full text-[var(--secondary-color)]">1</span>
+        isAdded && <span title="Go to cart" className="absolute right-0 cursor-pointer bg-[var(--black-color5655)] font-bold size-6 grid place-items-center text-md shadow-md rounded-full text-[var(--white-color)]">1</span>
       }
       <img src={product.image}className="w-full object-cover cursor-pointer hover:scale-110  h-48 trans" alt={product.name} title="See details" />
       <div className="px-2 py-4">
@@ -37,7 +37,7 @@ function ProductCard({product}: Props) {
             {product.score >= 4.5 && fiveStar }
           </span>
           </div>
-          <button onClick={() => {setAdded(!isAdded)}} title={`Add ${product.name} to cart`} className={` rounded-lg hover:opacity-100 opacity-80 text-sm md:text-lg border-2 px-2 mt-1 md:mt-0 py-1 w-[90%] m-auto shadow-md text-[var(--primary-color)] border-[var(--primary-color)] ${isAdded ? "bg-[var(--primary-color)] text-[var(--white-color)] opacity-100" : "bg-[var(--white-color)] text-[var(--primary-color)]"} trans`}>
+          <button onClick={() => {setAdded(!isAdded)}} title={`Add ${product.name} to cart`} className={` rounded-lg hover:opacity-100 opacity-80 text-sm md:text-lg border-2 px-2 mt-1 md:mt-0 py-1 w-[90%] bg-[var(--primary-color)] m-auto shadow-md  ${isAdded ? "text-[var(--primary-color)] bg-inherit border-[var(--primary-color)] opacity-100" : "bg-[var(--primary-color)] text-[var(--white-color)]"} trans`}>
             {isAdded ? "Added" : "+Add to cart"}
           </button>
         </div>

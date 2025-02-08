@@ -37,9 +37,9 @@ const disableButton =   person.fullName.length > 4 || person.email.length > 6 ||
           </div>
           <div className="mb-3 flex items-cente gap-2  borde border-gray-600 input-box">
             <label htmlFor="message">Message</label>
-                <textarea  id="message" rows={7} cols={26} value={person.message} onChange={e => setPerson({...person, message:e.target.value})}  className="border"  placeholder="message"></textarea>
+                <textarea  id="message" rows={7} cols={26}  className='bg-inherit' value={person.message} onChange={e => setPerson({...person, message:e.target.value})}  className="border"  placeholder="message"></textarea>
           </div>
-          <button disabled={!disableButton} className={`btn bg-[var(--primary-color)] p-2 w-52 px-6 rounded-2xl text-[var(--white-color)] mx-auto my-3 ${disableButton && "opacity-40"} trans`} type="submit">Send</button>
+          <button disabled={!disableButton} className={`btn bg-[var(--primary-color)] p2 py-4 w-52 px-6 rounded-2xl text-[var(--white-color)] mx-auto my-3 ${disableButton && "opacity-40"} trans`} type="submit">Send</button>
     </form>
   )
 }

@@ -20,7 +20,7 @@ function FilterProducts({onFilter, filterProduct}: Props) {
       </span>
       
     </button>
-      <ul className={`absolute bg-[var(--black-color2)] p-6 top-16 text-[var(--white-color2)] shadow-lg rounded-lg w-52 z-40  ${showProducts ? 'block' : 'hidden'}`}>
+      <ul className={`absolute bg-[var(--secondary-color)] p-6 top-16 text-[var(--white-color)] shadow-lg rounded-lg w-52 z-40  ${showProducts ? 'block' : 'hidden'}`}>
         {
             productsTypes.map(product =>  <li onClick={() =>{
                 setShowProducts(false)

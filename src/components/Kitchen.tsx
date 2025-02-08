@@ -10,7 +10,7 @@ interface Props{
 function Kitchen( {data, onFilter, filterProduct}: Props) {
      const heading = filterProduct && productsTypes.map(item => item.id === filterProduct && "Daisy's" + " " + item.name )
   return (
-    <section className="trans">
+    <section className="trans mt-[var(--md-margin)]">
    <div className="flex justify-around items-center ">
    <FilterProducts filterProduct={filterProduct} onFilter={onFilter}/>
     <Cart/>

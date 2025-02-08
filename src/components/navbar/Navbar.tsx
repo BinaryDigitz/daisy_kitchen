@@ -28,13 +28,13 @@ function handleInput(event:ChangeEvent<HTMLInputElement>){
 
   return (
     <nav>
-      <div className=" relative flex md:justify-around gap-3 justify-between items-center p-3 py-4  lg:py-6 shadow-md text-[var(--white-color)] bg-[var(--primary-color)]">
+      <div className=" relative flex md:justify-around gap-3 justify-between items-center p-3 py-4 shadow-md text-[var(--black-color)] ">
         <Logo/>
         <InputSearch handleInput={handleInput} search={search}/>
         <NavbarItems/>
         <NavbarMenu/>
       </div>
-    <div className={` ${!search.displayBox ? "hidden" : ''} max-h-[300px] overflow-auto  absolute bg-white text-black p-3 rounded-md shadow-md  z-50 w-[80%] lg:w-[50%] translate-x-[50%] right-[50%]`}>
+    <div className={` ${!search.displayBox ? "hidden" : ''} max-h-[300px] overflow-auto bg-[var(--white-color)]  absolute   p-3 rounded-md shadow-md  z-50 w-[80%] lg:w-[50%] translate-x-[50%] right-[50%]`}>
         <div title="Close" onClick={()=>{
           setSearch({...search, displayBox:!search.displayBox})
           setSearch({...search, searchData:''})
@@ -42,7 +42,7 @@ function handleInput(event:ChangeEvent<HTMLInputElement>){
          <svg xmlns="http://www.w3.org/2000/svg" className="absolute right-2  hover:scale-110 shadow-md cursor-pointer trans" height="24px" viewBox="0 -960 960 960" width="24px" fill="#900c3f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
         </div>
        {
-         filterData.length > 0 &&  <p className="flex justify-around my-1 py-1 bg-slate-100 text-red-900">
+         filterData.length > 0 &&  <p className="flex mt-5 justify-around my-1 py-1  ">
          <span>NAME</span>
          <span>CATEGORY</span>
          <span>PRICE</span>
@@ -55,14 +55,14 @@ function handleInput(event:ChangeEvent<HTMLInputElement>){
               setSearch({...search, searchData:''})
             }}
             title={`visit ${item.name}`}
-           className="flex opacity-80 justify-around my-1 py-2 bg-slate-50 cursor-pointer hover:opacity-100 text-green-900">
+           className="flex opacity-80 justify-around my-1 py-2 bg-slate-200 cursor-pointer hover:opacity-100 ">
             <span>{item.name}</span>
             <span>{item.category.charAt(0).toUpperCase() + item.category.slice(1)}</span>
             <span>{item.price} </span>
           </p>)
          }
          {
-          filterData.length == 0 && <p className="flex flex-col text-center p-4">
+          filterData.length == 0 && <p className="flex flex-col text-center p-4 tex-[var(--danger-color)]">
             <span className="">ITEM NOT FOUND</span>
             <span className="text-sm  opacity-70">Please search by name or price</span>
           </p>

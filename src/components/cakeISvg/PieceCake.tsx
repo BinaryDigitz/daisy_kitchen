@@ -2,7 +2,7 @@
 
 function PieceCake() {
   return (
-    <div className="size-10 lg:size-16 cake_icon_one">
+    <div className="">
 	  <svg className="size-full" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 512 512" xmlSpace="preserve">
 <path style={{ fill: '#FFCC85' }} d="M439.131,373.547H72.869V184.781c0-19.577,15.871-35.447,35.447-35.447H439.13v224.213H439.131z"/>

@@ -17,15 +17,15 @@ const Counts = () => {
   return (
    <div>
     <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
-   <section className="trans-blak text-black grid grid-cols-2 md:grid-cols-4 place-items-center gap-4 mt-3 h-[300px] rounded-xl shadow-lg ">
+   <section className="trans-blak text-black grid grid-cols-2 md:grid-cols-4 place-items-center gap-4 mt-[var(--sm-margin)] h-[300px] rounded-xl shadow-lg ">
       {
         countsDetails.map((count, index) => <div key={index} className="flex items-center gap-2  rounded-sm w-[150px]">
             <span className="opacity-80">{count.icon}</span>
             <div className="text-center">
-                <p className="text-xl font-bold opacity-80 md:text-3xl">
+                <p className="heading3 font-bold opacity-80 ">
                   {counterOn && <CountUp start={0} end={count.total} duration={3} delay={0}/>}
                 </p>
-                <p className="opacity-60">{count.name}</p>
+                <p className="subheading opacity-60">{count.name}</p>
             </div>
             <div>
               

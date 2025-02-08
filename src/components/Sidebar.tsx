@@ -15,9 +15,9 @@ function Sidebar() {
     <section className=" flex flex-col  p-4 mt-4">
       {
         asideItems.map(item => (
-          <Link to={item.link} key={item.name} className="flex w-full items-center opacity-80 py-1 my-1 shadow-md  hover:opacity-100 rounded-md hover:bg-[var(--primary-color)] trans">
+          <Link to={item.link} key={item.name} className="flex w-full items-center opacity-80 py-1 my-1 shadow-md  hover:opacity-100  hover:bg-[var(--primary-color)] trans">
             <span  className="material-icons size-10 grid place-items-center opacity-70">{item.icon}</span>
-            <span onClick={appContext?.closeAllMenues} className='px-2 w-full text-[var(--white-color)]'>{item.name}</span>
+            <span onClick={appContext?.closeAllMenues} className='px-[var(--sm-padding)] w-full text-[var(--white-color)]'>{item.name}</span>
           </Link>
         ))
       }

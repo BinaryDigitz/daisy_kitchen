@@ -15,7 +15,7 @@ const ListGroup = ({items, onDelete}: Props) => {
                 <th className="py- px-1 ">Name</th>
                 <th className="py- px-1 ">Unit Price </th>
                 <th className="py- ">Amount</th>
-                <th></th>
+                <th>delate</th>
             </tr>
             
         </thead>

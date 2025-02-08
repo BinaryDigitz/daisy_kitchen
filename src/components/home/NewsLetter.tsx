@@ -5,7 +5,7 @@ function NewsLetter() {
     const [email, setEmail] = useState('')
     const disableButton = email.length < 5
   return (
-    <section className="text-center py-[var(--lg-margin)] text-black p-[var(--sm-padding)] pt-[var(--lg-padding)] h-[200px] bg-[var(--white-color)] text-[var(--primary-color)] rounded-btm">    
+    <section className="text-center py-[var(--xl-padding)] text-black p-[var(--sm-padding)] pt-[var(--lg-padding)] h-[150px] lg:h-[200px] bg-[var(--white-color)] text-[var(--primary-color)] rounded-btm">    
         <h3 className="subheading">SUBSCRIBE TO OUR NEWSLETTERS</h3>
         <h3 className="paragraph2">Recieve notifications about our offers and promotions</h3>
        

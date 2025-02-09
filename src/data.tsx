@@ -1,4 +1,8 @@
 import { WhatsApp , Facebook, YouTube, Instagram, Tiktok} from "./components/Icons/exportIcons";
+
+export const metaData = 
+  {name: 'Daisy kitchen'}
+
 export const productsTypes = [
     {id:'', name: "All products"},
     {id: 'birthday', name: "Birthday cakes"},
@@ -10,7 +14,14 @@ export const productsTypes = [
     {id: 'salad', name: "Salads"},
 
 ]
-
+export const workers =[
+  {
+    name: 'Esambili Desire U.',
+    title: 'CEO and Master Pastry Chef',
+    qualifications: 'Msc.Food control HND Management services',
+    image: './homeIcons/cutting rice.png'
+  }
+]
 export const company = ['About','Blog', 'Careers', 'Contact Us', 'Customers', 'Partners', 'Privacy Policy', 'Terms & Condition', 'Legal']
 export const socialLink = [
       {name: 'Facebook',icon:<Facebook/>, link: 'https://www.facebook.com/profile.php?id=100084198829473&mibextid=wwXIfr'},

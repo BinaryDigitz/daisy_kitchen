@@ -30,6 +30,10 @@ const userSchema = new mongoose.Schema({
         minLength:8,
         maxLenght:250
     },
+    photo:{
+        type:String,
+        default:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqafzhnwwYzuOTjTlaYMeQ7hxQLy_Wq8dnQg&s' 
+    },
     
 }, {timestamps: true} 
 );

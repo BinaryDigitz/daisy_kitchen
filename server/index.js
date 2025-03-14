@@ -5,6 +5,7 @@ import { JWT_SECRET } from "./config/env.js";
 import cors from 'cors'
 import { loadDatabase } from "./utils/loadDatabase.js";
 import { errorHandler }  from './middlewares/erroHandle.js'
+import authRouter from "./routes/auth.route.js";
 
 // Close the app if no jwt key is provided
 if(!JWT_SECRET){
@@ -28,6 +29,9 @@ app.use(express.json())
 app.use(cors(corsOrigin))
 app.use(cookieParser())
 app.use(morgan('tiny'))
+
+// ROUTES
+app.use('/api/auth', authRouter)
 
 // ERROR HANDLER
 app.use(errorHandler)

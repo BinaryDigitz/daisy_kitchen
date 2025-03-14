@@ -1,12 +1,14 @@
 
 import { Router } from "express";
-import { asyncMiddleware } from "../middlewares/asyncMiddleware.js";
-import { signup } from "../controllers/auth.controllers.js";
-
+import { signup, login, google } from '../controllers/authControlers.js'
 
 const authRouter = Router()
 
-authRouter.post('/signup', asyncMiddleware(signup))
+authRouter.post('/signup', signup)
+
+authRouter.post('/login', login)
+
+authRouter.post('/google', google)
 
 
 

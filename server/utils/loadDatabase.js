@@ -7,7 +7,7 @@ export function loadDatabase() {
         .then(() => {
             console.log('Connected to MONGODB database');
             app.listen(PORT, () => {
-                console.log(`Server running at http://localhost:${PORT}`);
+                console.log(`Daisy kitchen is running at http://localhost:${PORT}`);
 
             })
 

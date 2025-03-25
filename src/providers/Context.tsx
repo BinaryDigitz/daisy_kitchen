@@ -10,6 +10,7 @@ interface User {
   email: string;
   cartData: [];
   photo: string;
+  phone:string
 }
 
 interface ContextProps {

@@ -13,8 +13,9 @@ interface Props {
 //   photo:string
 // }
 const user = {
-  fullName: "boris",
+  fullName: "Boris Ayam Ndoh",
   email: 'boris@email.com',
+  phone: '+237 653 77 5159',
   cartData: [],
   photo:'http://cloudinary/image?1=0'
 }

@@ -26,15 +26,16 @@ function Product() {
   }, [productId]);
 
   return (
-    <div>
+    <div className="mt-7">
+      <Title text1="PROUDUCT" text2="DESCRIPTION" size="heading3" />
       {product ? (
-        <div className="w-full grid place-items-center mt-10 p-5">
+        <div className="w-full grid place-items-center p-5 mt-8">
           <div className="flex flex-col md:flex-row w-full mb-5 lg:mb-10">
             <div className=" mx-auto w-full md:max-w-[50%] ">
               <div className=" ">
                 <img
                   src={viewImage}
-                  className=" bg-red-50 min-h-[400px] w-[85%] md:min-h-[350px] lg:min-h-[400px] lg:w-[340px] mx-auto rounded-tl-lg rounded-tr-lg"
+                  className=" bg-red-50 h-[450px] w-[90%] md:min-h-[350px] lg:min-h-[400px] lg:w-[340px] mx-auto rounded-tl-lg rounded-tr-lg"
                   alt={viewImage}
                 />
                 <div className="flex justify-around gap-1 mt-5 w-4/5 lg:w-1/2 mx-auto">
@@ -53,18 +54,21 @@ function Product() {
             </div>
             {/* Right */}
             <div className=" py-10  ">
-              <h3 className="heading3 text-red-950">{product?.name}</h3>
-              <p className="flex gap-10 item-center text-lg lg:text-xl text-red-950">
+              <hr className="border md:hidden1 border-red-100 my-4" />
+              <h3 className="heading2 text-red-950">{product?.name}</h3>
+              <p className="flex gap-10 item-center text-lg lg:text-xl text-red-850">
                 {product?.category}
-                <span className="flex items-center">{"****"}(122)</span>
+                <span className="flex items-center text-yellow-700 text-sm">
+                  {"****"}(122)
+                </span>
               </p>
-              <p className="mt-2 font-medium text-red-950">
+              <p className="mt-2 font-medium text-red-800">
                 Description <br />
                 <span className="text-gray-600 font-normal">
                   {product?.description}
                 </span>
               </p>
-              <p className="font-medium mt-4 text-red-950">
+              <p className="font-medium mt-4 text-red-800">
                 Ingredients <br />
                 <span className="text-gray-600 font-normal">
                   Lorem text-sm ipsum dolor sit amet consectetur adipisicing
@@ -82,12 +86,17 @@ function Product() {
               </div>
             </div>
           </div>
-          <div className="my-5">
+          <div className="my-5 w-full">
             <Title text1="RELATED" text2="PROUDUCTS" size="heading3" />
-            <div className="grid grid-cols-2 mt-[var(--lg-margin)] md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center gap-y-10 2xl:gap-y-14">
+            <div className="grid grid-cols-2 gap-8 mt-[var(--lg-margin)] md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 place-items-center gap-y-10 2xl:gap-y-14">
               {relatedProduct.map((item) => (
                 <ProductCard product={item} />
               ))}
+            </div>
+            <div className="grid place-items-center mt-8">
+              <button className="px-6 py-3 text-sm text-red-900 border my-8 mx-auto border-[var(--secondary-color)] rounded-md hover:shadow-md hover:shadow-red-500 trans">
+                View more products
+              </button>
             </div>
           </div>
           <NewsLetter />

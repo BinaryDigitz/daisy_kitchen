@@ -38,8 +38,8 @@ const { userData, userIsLoggedIn, closeAllMenues} =  useContext(AppContext)
         ) :
         (
       <div className="flex gap-4 p-1  mx-7 my-6">
-        <button onClick={()=> navigate('/signup')} title="Click to create an account" className="shadow-lg w text-sm border hover:opacity-70 trans rounded-lg px-3 p-2 border-[var(--primary-color)] text-red-900">Create account</button>
-        <button onClick={()=> navigate('/login')} title="Click to login" className="shadow-lg w-24 rounded-lg px-4 p-1 hover:opacity-70 trans bg-[var(--primary-color)] text-red-100">Login</button>
+        <button onClick={()=> navigate('/signup')} title="Click to create an account" className="shadow-md w text-sm border hover:opacity-70 trans rounded-lg px-3 p-2 border-red-100 shadow-red-200 text-red-900">Create account</button>
+        <button onClick={()=> navigate('/login')} title="Click to login" className="shadow-lg w-24 rounded-lg px-4 p-1 hover:opacity-70 trans bg-[var(--primary-color)] shadow-red-200 text-red-100">Login</button>
      </div>
         )
       }
@@ -48,7 +48,7 @@ const { userData, userIsLoggedIn, closeAllMenues} =  useContext(AppContext)
       
       {
         asideItems.map(item => (
-          <Link to={item.link} key={item.name} className={` ${pathname === item.link ? 'bg-red-200' : ''} flex w-full items-center  py-1 my-1 px-4 hover:opacity-100  hover:bg-red-50 trans`}>
+          <Link to={item.link} key={item.name} className={` ${pathname === item.link ? 'bg-red-50' : ''} flex w-full items-center  py-1 my-1 px-4 hover:opacity-100  hover:bg-red-50 trans`}>
             <span  className="material-icons size-10 grid place-items-center opacity-70">{item.icon}</span>
             <span onClick={closeAllMenues} className='px-[var(--sm-padding)] w-full text-gray-700'>{item.name}</span>
           </Link>

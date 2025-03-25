@@ -56,7 +56,9 @@
   .trans-black{
     background-color: rgba(0,0,0, 0.1);
   }
-  
+::placeholder{
+  color: #eb8484;
+}
   a {
     font-weight: 500;
     /* color: var(--primary-color);

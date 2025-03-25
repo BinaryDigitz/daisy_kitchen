@@ -6,7 +6,7 @@ import TestimonialCard from "./TestimonialCard"
 function TestimonialBlog() {
   
   return (
-    <section className="grid  place-items-center p-5 pt-8 relative overflow-hidden mt-[var(--lg-margin)]">
+    <section className="grid  place-items-center p-5 pt-8 relative overflow-hidden mt-28 lg:mt-14">
       <span className="absolute  left-0 h-[300px] w-[400px] overflow-hidden">
         <img src="./homeIcons/rice_bag.png" className="opacity-0" alt="" />
       </span>

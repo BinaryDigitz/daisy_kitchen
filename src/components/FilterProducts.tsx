@@ -63,7 +63,7 @@ function FilterProducts({ onFilter, filterProduct }: Props) {
         </button>
       </div>
       <ul
-        className={`absolute  p-6 top-16 text-red-900 border bg-red-50 rounded-lg w-56 z-10  ${
+        className={`absolute  py- top-16  bg-white border border-red-50 rounded-lg w-56 z-10  ${
           showProducts ? "block" : "hidden"
         }`}
       >
@@ -74,10 +74,10 @@ function FilterProducts({ onFilter, filterProduct }: Props) {
               setShowProducts(false);
               onFilter(product.id);
             }}
-            className={`cursor-pointer opacity-80 py-2 my-1 px-2 shadow-md ${
+            className={`cursor-pointer opacity-80 py-2 my-1 hover:bg-red-200 px-2 shadow-md shadow-red-200 ${
               active === product.id
                 ? "bg-white text-[var(--secondary-color)] "
-                : "bg-red-100 text-red-950 "
+                : "bg-red-50 text-red-950 "
             } trans w-full`}
             key={product.id}
           >

@@ -26,8 +26,8 @@ function InputSearch() {
     }
   }, [pathname]);
   return (
-    <p onClick={handleSearch} className=" cursor-pointer">
-      <img src={assets.search_icon} className="size-6" alt="" />
+    <p onClick={handleSearch} className=" cursor-pointer ">
+      <img src={assets.search_icon} className="size-6 " alt="" />
     </p>
     //
   );

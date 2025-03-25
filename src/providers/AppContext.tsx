@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AppContext } from "./Context";
 import { ProductTypes } from "../types";
-import { products } from "../database";
+import { products } from "../../public/database";
 
 interface Props {
   children: React.ReactNode;

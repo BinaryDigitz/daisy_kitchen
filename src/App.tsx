@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { About, Contact,  Footer, Kitchen, Home, Navbar, Sidebar,Product, Login, Signup, Profile } from "./components/exportComp"
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom"
+import { About, Contact,  Footer, Kitchen, Home, Navbar, Sidebar,Product, Login, Signup, Profile, Orders } from "./components/exportComp"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./App.css"
 import './my_css.css'
 import { useContext } from "react"
@@ -43,6 +43,7 @@ const [ filterProduct, setFilterProduct ] = useState('')
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/signup" element={<Signup/>}/>
                 <Route path="/profile" element={<Profile/>}/>
+                <Route path="/orders" element={<Orders/>}/>
                 <Route path="/kitchen" element={<Kitchen filterProduct={filterProduct} data={data} onFilter={(filter) => setFilterProduct(filter)
                 } />}/>
                 <Route path="/about" element={<About/>}/>

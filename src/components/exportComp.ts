@@ -3,6 +3,8 @@ export { default as Profile } from '../pages/Profile'
 export { default as Login } from '../pages/Login'
 export { default as Signup } from '../pages/Signup'
 export { default as Product } from '../pages/Product'
+export { default as Orders } from '../pages/Orders'
+export { default as ViewOrder } from '../pages/ViewOrder'
 
 // NAVBAR
 export { default as Navbar } from './navbar/Navbar';

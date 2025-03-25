@@ -8,7 +8,7 @@ export const products: ProductTypes[] = [
     name: 'Aqua girl',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Aqua girl.jpg",
+    image: ['./photos/birthday/Aqua girl.jpg','./photos/birthday/Asconi argo.jpg', './photos/birthday/Boss lady.jpg' ],
     category: 'birthday',
     score: 4.3
 },{
@@ -16,7 +16,7 @@ export const products: ProductTypes[] = [
     name: 'Asconi argo',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Asconi argo.jpg",
+    image: ["./photos/birthday/Asconi argo.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -25,7 +25,7 @@ export const products: ProductTypes[] = [
     name: 'Avengers',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Avengers.jpg",
+    image: ["./photos/birthday/Avengers.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -34,7 +34,7 @@ export const products: ProductTypes[] = [
     name: 'Boss lady',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Boss lady.jpg",
+    image: ["./photos/birthday/Boss lady.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -43,7 +43,7 @@ export const products: ProductTypes[] = [
     name: 'Chanel',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Chanel.jpg",
+    image: ["./photos/birthday/Chanel.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -52,7 +52,7 @@ export const products: ProductTypes[] = [
     name: 'Chemist choice',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Chemist choice.jpg",
+    image: ["./photos/birthday/Chemist choice.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -61,7 +61,7 @@ export const products: ProductTypes[] = [
     name: 'Cherry sweet',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Cherry sweet.jpg",
+    image: ["./photos/birthday/Cherry sweet.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -70,7 +70,7 @@ export const products: ProductTypes[] = [
     name: 'Colonel',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Colonel.jpg",
+    image: ["./photos/birthday/Colonel.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -79,7 +79,7 @@ export const products: ProductTypes[] = [
     name: "Daddy's doll",
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Daddy's barbie.jpg",
+    image: ["./photos/birthday/Daddy's barbie.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -88,7 +88,7 @@ export const products: ProductTypes[] = [
     name: "Daddy's daughter",
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Daddy's daughter.jpg",
+    image: ["./photos/birthday/Daddy's daughter.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -97,7 +97,7 @@ export const products: ProductTypes[] = [
     name: 'Darling angel',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Darling angel.jpg",
+    image: ["./photos/birthday/Darling angel.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -106,7 +106,7 @@ export const products: ProductTypes[] = [
     name: 'Fashion designer',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Fashion designer.jpg",
+    image: ["./photos/birthday/Fashion designer.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -115,7 +115,7 @@ export const products: ProductTypes[] = [
     name: 'Golden queen',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Golden queen.jpg",
+    image: ["./photos/birthday/Golden queen.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -124,7 +124,7 @@ export const products: ProductTypes[] = [
     name: 'Hala Madrid',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Hala Madrid.jpg",
+    image: ["./photos/birthday/Hala Madrid.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -133,7 +133,7 @@ export const products: ProductTypes[] = [
     name: 'Hennessey',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Hennessey.jpg",
+    image: ["./photos/birthday/Hennessey.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -142,7 +142,7 @@ export const products: ProductTypes[] = [
     name: 'Laureen sweets',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Laureen sweets.jpg",
+    image: ["./photos/birthday/Laureen sweets.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -151,7 +151,7 @@ export const products: ProductTypes[] = [
     name: 'Man united',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Man united.jpg",
+    image: ["./photos/birthday/Man united.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -160,7 +160,7 @@ export const products: ProductTypes[] = [
     name: 'Mechanical Eng',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Mechanical Eng.jpg",
+    image: ["./photos/birthday/Mechanical Eng.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -169,7 +169,7 @@ export const products: ProductTypes[] = [
     name: 'Mickey mouse',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Mickey mouse.jpg",
+    image: ["./photos/birthday/Mickey mouse.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -178,7 +178,7 @@ export const products: ProductTypes[] = [
     name: 'Military cake',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Military cake.jpg",
+    image: ["./photos/birthday/Military cake.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -187,7 +187,7 @@ export const products: ProductTypes[] = [
     name: 'Novelas',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Novelas.jpg",
+    image: ["./photos/birthday/Novelas.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -196,7 +196,7 @@ export const products: ProductTypes[] = [
     name: 'Nurse care',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Nurse care.jpg",
+    image: ["./photos/birthday/Nurse care.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -206,7 +206,7 @@ export const products: ProductTypes[] = [
     name: 'Sponge bob',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Sponge bob.jpg",
+    image: ["./photos/birthday/Sponge bob.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -215,7 +215,7 @@ export const products: ProductTypes[] = [
     name: 'Twin combo',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Twin combo.jpg",
+    image: ["./photos/birthday/Twin combo.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -225,7 +225,7 @@ export const products: ProductTypes[] = [
     name: 'Versace',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Versace.jpg",
+    image:[ "./photos/birthday/Versace.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -234,7 +234,7 @@ export const products: ProductTypes[] = [
     name: 'Your Choco',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Your Choco.jpg",
+    image: ["./photos/birthday/Your Choco.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -243,7 +243,7 @@ export const products: ProductTypes[] = [
     name: 'Your Joker',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/birthday/Your Joker.jpg",
+    image: ["./photos/birthday/Your Joker.jpg"],
     category: 'birthday',
     score: 4.3
 },
@@ -254,7 +254,7 @@ export const products: ProductTypes[] = [
     name: 'Lagos boss',
     price: 100000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/wedding/Lagos boss.jpg",
+    image: ["./photos/wedding/Lagos boss.jpg"],
     category: 'wedding',
     score: 4.3
 },
@@ -263,7 +263,7 @@ export const products: ProductTypes[] = [
     name: 'Grass land',
     price: 100000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/wedding/Grass land.jpg",
+    image: ["./photos/wedding/Grass land.jpg"],
     category: 'wedding',
     score: 4.3
 },
@@ -272,7 +272,7 @@ export const products: ProductTypes[] = [
     name: 'Monalisa',
     price: 150000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/wedding/U $ I 4 ever.jpg",
+    image: ["./photos/wedding/U $ I 4 ever.jpg"],
     category: 'wedding',
     score: 4.3
 },
@@ -283,7 +283,7 @@ export const products: ProductTypes[] = [
     name: "His for ever",
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/anniversary/His for ever.jpg",
+    image: ["./photos/anniversary/His for ever.jpg"],
     category: 'anniversary',
     score: 4.3
 },
@@ -292,7 +292,7 @@ export const products: ProductTypes[] = [
     name: "Love is gold",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/anniversary/Love is gold.jpg",
+    image: ["./photos/anniversary/Love is gold.jpg"],
     category: 'anniversary',
     score: 4.3
 },
@@ -301,7 +301,7 @@ export const products: ProductTypes[] = [
     name: "Prince charmx",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/anniversary/Prince charmx.jpg",
+    image: ["./photos/anniversary/Prince charmx.jpg"],
     category: 'anniversary',
     score: 3.3
 },{
@@ -309,7 +309,7 @@ export const products: ProductTypes[] = [
     name: "Angelina spring",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/anniversary/Angelina spring.jpg",
+    image: ["./photos/anniversary/Angelina spring.jpg"],
     category: 'anniversary',
     score: 4.3
 },
@@ -320,7 +320,7 @@ export const products: ProductTypes[] = [
     name: '30,000',
     price: 34335.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/flower_banquet/30,000.jpg",
+    image: ["./photos/flower_banquet/30,000.jpg"],
     category: 'flowerbanquet',
     score: 2.5
 },
@@ -329,7 +329,7 @@ export const products: ProductTypes[] = [
     name: '50,000',
     price: 60000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/flower_banquet/50,000.jpg",
+    image: ["./photos/flower_banquet/50,000.jpg"],
     category: 'flowerbanquet',
     score: 3.5
 },
@@ -338,7 +338,7 @@ export const products: ProductTypes[] = [
     name: '60,000',
     price: 70500.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/flower_banquet/60,000.jpg",
+    image: ["./photos/flower_banquet/60,000.jpg"],
     category: 'flowerbanquet',
     score: 4.5
 },
@@ -347,7 +347,7 @@ export const products: ProductTypes[] = [
     name: '80,000',
     price: 95000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/flower_banquet/80,000.jpg",
+    image: ["./photos/flower_banquet/80,000.jpg"],
     category: 'flowerbanquet',
     score: 5
 },
@@ -358,7 +358,7 @@ export const products: ProductTypes[] = [
     name: 'British maffia',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/cup_cake/British maffia.jpg",
+    image: ["./photos/cup_cake/British maffia.jpg"],
     category: 'cupcake',
     score: 4.3
 },
@@ -367,7 +367,7 @@ export const products: ProductTypes[] = [
     name: 'French cups',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/cup_cake/French cups.jpg",
+    image:[ "./photos/cup_cake/French cups.jpg"],
     category: 'cupcake',
     score: 4.3
 },{
@@ -375,7 +375,7 @@ export const products: ProductTypes[] = [
     name: 'Irish cups',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/cup_cake/Irish cups.jpg",
+    image: ["./photos/cup_cake/Irish cups.jpg"],
     category: 'cupcake',
     score: 4.3
 },{
@@ -383,7 +383,7 @@ export const products: ProductTypes[] = [
     name: 'Malaysian cups',
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/cup_cake/Malaysian cups.jpg",
+    image: ["./photos/cup_cake/Malaysian cups.jpg"],
     category: 'cupcake',
     score: 4.3
 },
@@ -393,7 +393,7 @@ export const products: ProductTypes[] = [
     name: 'Box for 4',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Box for 4.jpg",
+    image: ["./photos/chop_station/Box for 4.jpg"],
     category: 'chopstation',
     score: 4.3
 },
@@ -402,7 +402,7 @@ export const products: ProductTypes[] = [
     name: 'Box for 10',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Box for 10.jpg",
+    image: ["./photos/chop_station/Box for 10.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -410,7 +410,7 @@ export const products: ProductTypes[] = [
     name: 'Crunchy bites',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Crunchy bites.jpg",
+    image: ["./photos/chop_station/Crunchy bites.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -418,7 +418,7 @@ export const products: ProductTypes[] = [
     name: "Daisy's delicacy",
     price: 50000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Daisy's delicacy.jpg",
+    image: ["./photos/chop_station/Daisy's delicacy.jpg"],
     category: 'chopstation',
     score: 5.3
 },{
@@ -426,7 +426,7 @@ export const products: ProductTypes[] = [
     name: "Daisy's pies",
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Daisy's pies.jpg",
+    image: ["./photos/chop_station/Daisy's pies.jpg"],
     category: 'chopstation',
     score: 5.3
 },{
@@ -434,7 +434,7 @@ export const products: ProductTypes[] = [
     name: 'Duo box',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Duo box.jpg",
+    image: ["./photos/chop_station/Duo box.jpg"],
     category: 'chopstation',
     score: 3.3
 },{
@@ -442,7 +442,7 @@ export const products: ProductTypes[] = [
     name: 'House party 1',
     price: 90000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/House party 1.jpg",
+    image: ["./photos/chop_station/House party 1.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -450,7 +450,7 @@ export const products: ProductTypes[] = [
     name: 'House party 2',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/House party 2.jpg",
+    image: ["./photos/chop_station/House party 2.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -458,7 +458,7 @@ export const products: ProductTypes[] = [
     name: '',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Meal for 4.jpg",
+    image: ["./photos/chop_station/Meal for 4.jpg"],
     category: 'chopstation',
     score: 3.3
 },{
@@ -466,7 +466,7 @@ export const products: ProductTypes[] = [
     name: 'Meal for 12',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Meal for 12.jpg",
+    image: ["./photos/chop_station/Meal for 12.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -474,7 +474,7 @@ export const products: ProductTypes[] = [
     name: 'Meal for 15',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Meal for 15.jpg",
+    image: ["./photos/chop_station/Meal for 15.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -482,7 +482,7 @@ export const products: ProductTypes[] = [
     name: 'Meal for 20',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Meal for 20.jpg",
+    image: ["./photos/chop_station/Meal for 20.jpg"],
     category: 'chopstation',
     score: 4.3
 },{
@@ -490,7 +490,7 @@ export const products: ProductTypes[] = [
     name: 'Table for 10',
     price: 40000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Table for 10.jpg",
+    image: ["./photos/chop_station/Table for 10.jpg"],
     category: 'chopstation',
     score: 4.3
 },
@@ -499,7 +499,7 @@ export const products: ProductTypes[] = [
     name: 'Variety box',
     price: 45000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/Variety box.jpg",
+    image: ["./photos/chop_station/Variety box.jpg"],
     category: 'chopstation',
     score: 4.3
 },
@@ -508,7 +508,7 @@ export const products: ProductTypes[] = [
     name: 'Your bite',
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/chop_station/your_bite.jpg",
+    image: ["./photos/chop_station/your_bite.jpg"],
     category: 'chopstation',
     score: 3.3
 },
@@ -519,7 +519,7 @@ export const products: ProductTypes[] = [
     name: "Daisy's salad",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/salad/Daisy's salad.jpg",
+    image:[ "./photos/salad/Daisy's salad.jpg"],
     category: 'salad',
     score: 3.3
 },
@@ -528,7 +528,7 @@ export const products: ProductTypes[] = [
     name: "Egg Salad",
     price: 30000.99,
     description: 'Egg salad is a dish made primarily of chopped hard-boiled eggs        and mayonnaise, often 	including other ingredients such as celery or mustard.', 
-    image: "./photos/salad/Egg Salad.jpg",
+    image: ["./photos/salad/Egg Salad.jpg"],
     category: 'salad',
     score: 2.3
 },

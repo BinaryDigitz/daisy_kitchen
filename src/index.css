@@ -14,7 +14,7 @@
     text-decoration: none;
   }
   :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, san-serif;
+    font-family:  san-serif;
     line-height: 1.5;
     font-weight: 400;
   /* MANDATORY COLORS */
@@ -66,6 +66,12 @@
   a:hover {
     opacity: 08;
   }
+  nav a.active{
+   background-color: #fc04041c;
+   border-radius: 4px;
+   color: rgb(114, 3, 3);
+   box-shadow: 1px 1px 9px rgba(255, 0, 0, 0.452);
+  }
   .agu-font{
     font-family: 'Agu Display', sans-serif;
   }
@@ -78,7 +84,7 @@
     body {
     color:var(--black-color1);
    font-size: 1rem;
-   font-family: "Roboto", sans-serif;
+   font-family: "Roboto",  Helvetica, sans-serif;
    color: var(--black-color);
   
    background: var(--lightgradient-color) no-repeat;

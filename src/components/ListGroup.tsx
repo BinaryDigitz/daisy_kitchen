@@ -8,9 +8,9 @@ const ListGroup = ({items, onDelete}: Props) => {
     if(items.length === 0) return null
     const totalAmount = items.reduce((acc, item) => acc + (item.unitPrice * item.numberOfGuest), 0)
   return (
-    <table className=" shadow-md rounded-sm text-center w-[90%] mx-auto rounded-md lg:w-[40%] hero_image">
+    <table className=" shadow-md rounded-sm text-center w-[90%] mx-auto bg-white lg:w-[40%] hero_image">
         <thead className=" ">
-            <tr className="bg-slate-200  text-sm lg:text-[16px] opacity-70">
+            <tr className="bg-white text-sm lg:text-[16px] opacity-70">
                 <th className="py-3 px-1 ">SN</th>
                 <th className="py- px-1 ">Name</th>
                 <th className="py- px-1 ">Unit Price </th>

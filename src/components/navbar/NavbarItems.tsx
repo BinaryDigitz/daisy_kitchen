@@ -11,7 +11,7 @@ function NavbarItems() {
   return (
     <section className=" space-x-4 hidden md:flex ">
         {navItems.map(item => <NavLink to={item.link} key={item.name}>
-        <button className="btn button2 hover:cursor-pointer opacity-70 hover:opacity-100 trans">{item.name}</button>
+        <button className="btn button2 hover:cursor-pointer  hover:opacity-100 trans">{item.name}</button>
         </NavLink>)}
      </section>
   )

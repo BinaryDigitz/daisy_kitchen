@@ -15,7 +15,8 @@ interface ScrollTriggerWrapper{
 const Counts = () => {
   const [counterOn, setCounterOn ] = useState(false)
   return (
-   <div>
+   <section className="mt-5">
+    <hr className="w-4/5 m-auto border border-[var(--primary-color)]"/>
     <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
    <section className="trans-blak text-black grid grid-cols-2 md:grid-cols-4 place-items-center gap-4 mt-[var(--sm-margin)] h-[300px] rounded-xl shadow-lg ">
       {
@@ -34,7 +35,7 @@ const Counts = () => {
       }
     </section>
     </ScrollTrigger>
-   </div>
+   </section>
    
   )
 }

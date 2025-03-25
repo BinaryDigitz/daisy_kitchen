@@ -1,7 +1,5 @@
-import { LandingPage, Counts, Assurance, AboutBlog, ContactBlog } from "../exportComp"
+import { LandingPage, Counts, Assurance, ContactBlog, BestSeller } from "../exportComp"
 import TestimonialBlog from "./TestimonialBlog"
-
-
 
 
 function Home() {
@@ -9,8 +7,9 @@ function Home() {
     <section className="overflow-hidden">
         <LandingPage/>
         <Assurance/>
+        <BestSeller />
         <Counts/>
-        <AboutBlog/>
+        {/* <AboutBlog/> */}
         <TestimonialBlog/>
         {/* <Training/> */}
         <ContactBlog />

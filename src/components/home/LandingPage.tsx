@@ -15,7 +15,7 @@ function LandingPage() {
         
         </span>
         <Link to="/kitchen">
-          <button title="Visit our kitchen" className="button1 hero_button text-[var(--white-color)] p-4 px-8 my-7 md:my-7 font-bold shadow-lg rounded-xl hover:opacity-80 trans bg-[var(--primary-color)]">OUR KITCHEN</button>
+          <button title="Visit our kitchen" className="button1 hero_button text-[var(--white-color)] p-4 px-8 my-7 md:my-7 font-bold shadow-lg rounded-xl hover:opacity-80 trans bg-gradient-to-br to-[var(--secondary-color)] from-[var(--primary-color)] ">OUR KITCHEN</button>
         </Link>
       </div>
       <div className="hero_image absolute top-0 w-[100%] grid 2xl:place-items-center h-[50%] md:static image md:h-[100%] md:w-[50%] 2xl:w-[40%] overflow-hidden rounded-lg ">

@@ -37,15 +37,17 @@ function About() {
           </ul>
         </div>
 
-        <div className="grid place-items-center py-[var(--lg-padding)]">
-          <div className="h-[400px] w-[300px] lg:w-[400px] lg:h-[450px] border p-2 backdrop shadow-md rounded-md">
+        <div className="grid place-items-center gap-5 py-[var(--lg-padding)]">
+          {
+            workers.map((worker, index) =>{
+             return <div key={index} className="h-[400px]  w-[300px] lg:w-[400px] lg:h-[450px] border p-2 backdrop shadow-md rounded-md">
             <span className="bg-black h-[250px] w-[250px] rounded-full block mx-auto overflow-hidden -translate-y-2">
               <img src="./homeIcons/cutting rice.png" alt="Baker 1" />
             </span>
             <div className="text-center">
-              {
-                workers.map((worker, index) => (
-                  <div key={index}>
+              
+                
+                  <div>
                     <h3 className="heading3">{worker.name}</h3>
                     <p className="paragraph2">{worker.title}</p>
                     <p className="paragraph2">{worker.qualifications}</p>
@@ -53,10 +55,12 @@ function About() {
                       <SocialMedia/>
                     </div>
                   </div>
-                ))
-              }
+                
+              
             </div>
           </div>
+            })
+          }
         </div>
 
         <div className="p-3">

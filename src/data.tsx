@@ -10,17 +10,35 @@ export const productsTypes = [
     {id: 'anniversary', name: "Aniversary cakes"},
     {id: 'cupcake', name: "Cup cakes"},
     {id: 'flowerbanquet', name: "Flower banquets"},
-    {id: 'chopstation', name: "Small chop stations"},
+    {id: 'chopstation', name: "Chop station"},
     {id: 'salad', name: "Salads"},
 
 ]
 export const workers =[
   {
-    name: 'Esambili Desire U.',
+    name: 'Esambili Desiree U.',
     title: 'CEO and Master Pastry Chef',
     qualifications: 'Msc.Food control HND Management services',
     image: './homeIcons/cutting rice.png'
-  }
+  },
+  {
+    name: 'Esambili Desiree U.',
+    title: 'CEO and Master Pastry Chef',
+    qualifications: 'Msc.Food control HND Management services',
+    image: './homeIcons/cutting rice.png'
+  },
+  {
+    name: 'Esambili Desiree U.',
+    title: 'CEO and Master Pastry Chef',
+    qualifications: 'Msc.Food control HND Management services',
+    image: './homeIcons/cutting rice.png'
+  },
+  {
+    name: 'Esambili Desiree U.',
+    title: 'CEO and Master Pastry Chef',
+    qualifications: 'Msc.Food control HND Management services',
+    image: './homeIcons/cutting rice.png'
+  },
 ]
 export const company = ['About','Blog', 'Careers', 'Contact Us', 'Customers', 'Partners', 'Privacy Policy', 'Terms & Condition', 'Legal']
 export const socialLink = [

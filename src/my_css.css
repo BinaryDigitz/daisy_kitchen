@@ -31,6 +31,7 @@
     --heading1:40px;
     --heading2:32px;
     --heading3:20px;
+    --heading4:16px
     --subheading:16px;
     --paragraph1:16px;
     --paragraph2:14px;
@@ -75,6 +76,10 @@ html body{
 }
 .heading3{
     font-size: var(--heading3);
+    font-weight: bold;
+}
+.heading4{
+    font-size: var(--heading4);
     font-weight: bold;
 }
 .subheading{
@@ -141,6 +146,7 @@ button.btn:active{
     --heading1:56px;
     --heading2:48px;
     --heading3:36px;
+    --heading4:25px;
     --paragraph1:18px;
     --paragraph2:16px;
 

@@ -1,4 +1,5 @@
-import React from "react";
+
+import { Link } from "react-router-dom";
 import { Title } from "../components/exportComp";
 
 function Orders() {
@@ -29,6 +30,7 @@ function Orders() {
               >
                 <td>{index + 1}</td>
                 <td>{order.orderId}</td>
+                <Link to={`/view_order/${order.orderId}`}>
                 <td
                   className={`${
                     order.status === "Decline"
@@ -42,6 +44,7 @@ function Orders() {
                 >
                   {order.status}
                 </td>
+                </Link>
                 <td>{order.price}</td>
               </tr>
             ))}

@@ -20,7 +20,7 @@ const Counts = () => {
     <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
    <section className="trans-blak text-black grid  md:grid-cols-4 place-items-center gap-4 mt-[var(--sm-margin)] rounded-xl md:h-[300px] shadow-lg ">
       {
-        countsDetails.map((count, index) => <div key={index} className="flex flex-col md:flex-row items-center gap-2 rounded-sm w-[150px]">
+        countsDetails.map((count, index) => <div key={index} className="flex flex-col md:flex-row items-center gap-2 my-7  rounded-sm w-[150px]">
             <span className="opacity-80 ">{count.icon}</span>
             <div className="text-center">
                 <p className="heading2 font-bold opacity-80 ">

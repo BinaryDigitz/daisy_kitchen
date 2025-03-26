@@ -16,6 +16,8 @@ export const signup = asyncMiddleware(async (req, res, next) => {
     // check if user exist in the database
     let existingUser = await User.findOne({ email })
     if (existingUser) return res.json({ success: false, statusCode: 400, message: 'User already exist.' })
+    let existingNumber = await User.findOne({ phone })
+    if (existingNumber) return res.json({ success: false, statusCode: 400, message: 'User already exist.' })
 
     // User doest not exist
     // Hash user password
@@ -25,13 +27,14 @@ export const signup = asyncMiddleware(async (req, res, next) => {
 
     // Generate a token using the token method stored in the database
     const token = user.generateToken()
-
+  const { password: pass, ...rest} = user._doc
     // Send token as cookie
     return res.cookie('daisy_token', token, {
         httpOnly: true,
         secure: NODE_ENV === 'production'
     })
         .json({
+            user: rest,
             success: true,
             statusCode: NODE_ENV === 'development' ? 201 : 200,
             message: NODE_ENV === 'development' ? ' User logged in successfully' : 'Successful Login',
@@ -58,7 +61,7 @@ export const login = asyncMiddleware(async (req, res) => {
         statusCode: NODE_ENV === 'development' ? 404 : 400,
         message: NODE_ENV === 'development' ? ' Incorrect password.' : 'Incorrect email or password',
     });
-
+ const { password: pass, ...rest } = user._doc
     // Everything is find. user has the correct detail, generate token
     const token = user.generateToken()
     return res.cookie('daisy_token', token, {
@@ -66,6 +69,7 @@ export const login = asyncMiddleware(async (req, res) => {
         secure: NODE_ENV === 'production'
     })
         .json({
+            user: rest,
             success: true,
             statusCode: NODE_ENV === 'development' ? 201 : 200,
             message: NODE_ENV === 'development' ? ' User logged in successfully' : 'Successful Login',

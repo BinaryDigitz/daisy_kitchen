@@ -1,22 +1,26 @@
-import { Back, PlaceOrder } from "../exportComp";
+import { Title } from "../exportComp";
+import NewsLetter from "../home/NewsLetter";
+import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 
 function Contact() {
-  
   return (
-   <section className="lightBg relative"> 
-   <div className="">
-    <Back link={"/"}/>
-   </div>
-    <h1 className="text-center text-3xl font-bold py-8">Contact us</h1>
-       <div className="flex flex-col lg:flex-row justify-around  pt-8 h-screen  ">
-       
-      <div>
-        <ContactForm />
+    <section className=" mt-8 mb-4 relative">
+      <Title text1="CONTACT" text2="US" size="heading2" />
+      <p className="subheading text-center">
+        Our team is ready to get back to you
+      </p>
+
+      <div className="md:flex justify-around items-cente px-5 my-5">
+        <div className="mt-10 md:flex-1">
+          <ContactCard />
+        </div>
+        <div className="flex flex-col lg:flex-row justify-around  ">
+          <ContactForm />
+        </div>
       </div>
-    </div>
-    <PlaceOrder/>
-   </section>
+      <NewsLetter />
+    </section>
   );
 }
 

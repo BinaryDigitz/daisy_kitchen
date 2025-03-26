@@ -10,6 +10,8 @@ import { products } from "./database"
 import Training from "./components/home/Training"
 import { ToastContainer } from 'react-toastify'
 
+// FROM ADMIN ....
+import AppS from './admin/App'
 
 const App = () => {
 const [ data, setData ] = useState<ProductTypes[]>(products)
@@ -26,6 +28,9 @@ const [ filterProduct, setFilterProduct ] = useState('')
       }
     },[filterProduct])
     const showSidebar = appContext?.showSidebar ? "translate-x-0" : "-translate-x-full"
+
+    //  ....FROM ADMIN ....
+    return <AppS />
   return (
     
     <BrowserRouter>

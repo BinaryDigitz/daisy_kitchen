@@ -10,7 +10,7 @@ function ProductCard() {
   }
   return (
     <div className=" grid place-items-cente mt-10  w-full">
-      <Title text1="" text2="PRODUCTS" size="heading3 text-red-800 mb-8" />
+      <Title text1="ALL-" text2="PRODUCTS" size="heading4 text-red-800 mb-8" />
       {products.map((product) => (
         <div key={product._id} className="flex justify-around items-center py-4 lg:py-6 text-red-950 border border-red-100 rounded-md shadow shadow-red-200 mt-">
           <img

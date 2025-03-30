@@ -68,8 +68,9 @@ function ProductForm() {
  
   return (
     <form
+   
       onSubmit={handleFormSubmit}
-      className=" mx-auto overflow-hidden min-w-[350px] md:w-md mt-5 lg:w-lg border border-red-50 p-6 rounded-sm shadow shadow-red-300"
+      className=" mx-auto overflow-hidden min-w-[350px] md:w-md mt-14 lg:w-lg border border-red-50 p-6 rounded-sm shadow shadow-red-300"
     >
       <div className="flex justify-between">
         <label htmlFor="image1" className="cursor-pointer">

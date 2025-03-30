@@ -13,11 +13,12 @@ interface ScrollTriggerWrapper{
   children: ReactNode;
 }
 const Counts = () => {
-  const [counterOn, setCounterOn ] = useState(false)
+  const [counterOn, setCounterOn ] = useState(false);
+  // return null
   return (
    <section className="mt-5">
     <hr className="w-4/5 m-auto border border-[var(--primary-color)]"/>
-    <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
+    {/* <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} > */}
    <section className="trans-blak text-black grid  md:grid-cols-4 place-items-center gap-4 mt-[var(--sm-margin)] rounded-xl md:h-[300px] shadow-lg ">
       {
         countsDetails.map((count, index) => <div key={index} className="flex flex-col md:flex-row items-center gap-2 my-7  rounded-sm w-[150px]">
@@ -34,7 +35,7 @@ const Counts = () => {
         </div>)
       }
     </section>
-    </ScrollTrigger>
+    {/* </ScrollTrigger> */}
    </section>
    
   )

@@ -46,16 +46,16 @@ function Orders() {
                 <td>Price</td>
               </tr>
             </thead>
-            <tbody className="border-b-2">
+            <tbody className="">
               {orders.map((order, index) => (
                 <Link
                   key={order.orderId}
                   title="View order"
                   to={`/view_order/${order.orderId}`}
                 >
-                  <tr className="flex cursor-pointer  hover:bg-red-100 justify-between py-3 lg:py-2 px-3 gap-4 border bg-white trans">
+                  <tr className="flex cursor-pointer   hover:bg-red-100 justify-between py-3 lg:py-2 px-3 gap-4 border border-gray-100 bg-white trans">
                     <td>{index + 1}</td>
-                    <td>{order.orderId}</td>
+                    <td className="opacity-60">{order.orderId}</td>
                     <td
                       className={`${
                         order.status === "Decline"
@@ -69,7 +69,7 @@ function Orders() {
                     >
                       {order.status}
                     </td>
-                    <td>{order.price}</td>
+                    <td className="opacity-60">{order.price}</td>
                   </tr>
                 </Link>
               ))}

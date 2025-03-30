@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@import "tailwindcss";
+
+
+link .active{
+    border: 1px solid red;
+}
+body {
+    font-size: 1rem;
+    font-family: "Outfit",  Helvetica, sans-serif;
+    background: var(--lightgradient-color) no-repeat;
+    height: 100dvh;
+    width: 100dvw;
+}
+
+header nav a.active{
+        background-color: #fc04041c;
+        border-radius: 4px;
+        color: rgb(114, 3, 3);
+        box-shadow: 1px 1px 9px rgba(255, 0, 0, 0.452);
+  }
+  .trans {
+    transition: all 300ms ease-in-out;
+  }

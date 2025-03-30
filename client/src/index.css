@@ -1,17 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 *{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    
     list-style: none;
-    text-decoration: none;
+   
   }
   :root {
     font-family:  san-serif;
@@ -84,13 +81,10 @@
     background: var(--lightgradient-color);
   }
     body {
-    color:var(--black-color1);
    font-size: 1rem;
-   font-family: "Roboto",  Helvetica, sans-serif;
-   color: var(--black-color);
-  
+   font-family: "Outfit",  Helvetica, sans-serif;
    background: var(--lightgradient-color) no-repeat;
-    
+    }
    .hover_item{
     opacity: 0;
     cursor: pointer;
@@ -100,7 +94,7 @@
     opacity: 1;
    }
   
-  }
+  
   .tone_primary_color{
     background-color: rgba(210, 4, 45, 0.075);
   }

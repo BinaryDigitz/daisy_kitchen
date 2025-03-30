@@ -1,6 +1,7 @@
 
 import Title from '../components/Title'
 import ProductForm from '../components/ProductForm'
+import ProductCard from '../components/ProductCard'
 
 function Products() {
   return (
@@ -10,6 +11,7 @@ function Products() {
         <ProductForm />
 
       </div>
+        <ProductCard />
       
     </div>
   )

@@ -48,9 +48,9 @@ export const assets = {
 }
 
 export const myProducts = [
-    { name:'Bread', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '12344', images:[prince]},
-    { name:'Albert', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '12344', images:[angelina]},
-    { name:'John', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '12344', images:[gold]},
-    { name:'Magarita', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '12344', images:[forever]},
-    { name:'Greek delight', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '12344', images:[]},
+    { name:'Bread', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '1244', images:[prince]},
+    { name:'Albert', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '1344', images:[angelina]},
+    { name:'John', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '1234', images:[gold]},
+    { name:'Magarita', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '123445', images:[forever]},
+    { name:'Greek delight', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '1234456', images:[]},
   ]

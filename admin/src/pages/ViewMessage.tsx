@@ -8,7 +8,8 @@ interface MessageProps{
   sender:string;
   subject: string;
   email:string;
-  phone:string
+  phone:string,
+  message:string,
 }
 function ViewMessage() {
   const [ message, setMessage ] = useState<MessageProps>();
@@ -21,10 +22,10 @@ function ViewMessage() {
     fetchMessage();
   }, [messageId]);
   return (
-    <div>
+    <div className="mb-24">
       <div>
         <Title text1="" text2="MESSAGE STATUS" size="heading3 text-green-900" />
-        <div className="text-center,w-md border mt-10 rounded-sm border-green-300 p-2 bg-green-50">
+        <div className="text-center,w-md border mt-10 rounded-sm border-green-300 p-2 bg-green-50 lg:w-lg mx-auto">
           <p className="">
             Sender: <span className="text-green-900">Boris Ayam Ndoh</span>
           </p>
@@ -33,9 +34,10 @@ function ViewMessage() {
           <p>Tel: <span className="text-green-900">653775159</span></p>
         </div>
         <div>
-          <p className="border shadow shadow-green-100 mt-10 p-5 border-green-100 h-24">
-{}
-          </p>
+          <div className="border shadow shadow-green-100 mt-10 p-5 border-green-100 lg:w-3xl mx-auto">
+            <p className="text-gray-500">Subject: <span className="text-gray-700 ">{ message?.subject}</span></p>
+            <p className="mt-5 text-gray-700">{message?.message}</p>
+          </div>
         </div>
       </div>
     </div>

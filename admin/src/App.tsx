@@ -1,6 +1,5 @@
 import { ToastContainer } from "react-toastify";
 import { Routes, Route } from "react-router-dom";
-import Apps from "./digital_watch/App";
 import {
   Home,
   Footer,

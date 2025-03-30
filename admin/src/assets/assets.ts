@@ -23,9 +23,9 @@ import gold from './anniversary/Love is gold.jpg'
 import prince from './anniversary/Prince charmx.jpg'
 
 export const messages =[
-    {messageId: '1234', sender: 'Full name', subject: 'Subject is key', phone:'653775159', email: 'bo4i@gmil.com', Date:'12-26-2024'},
-    {messageId: '1234', sender: 'Full name', subject: 'Subject is key', phone:'653775159', email: 'bo4i@gmil.com', Date:'12-26-2024'},
-    {messageId: '1234', sender: 'Full name', subject: 'Subject is key', phone:'653775159', email: 'bo4i@gmil.com', Date:'12-26-2024'},
+    {messageId: '1234', sender: 'Full name', subject: 'Subject is key', phone:'653775159', message:' lorem hey messages are always good to be  the hero of everything, whatsup with everything ', email: 'bo4i@gmil.com', Date:'12-26-2024'},
+    {messageId: '1234', sender: 'Full name', subject: 'Subject is key', phone:'653775159', message:' lorem hey messages are always good to be  the hero of everything, whatsup with everything ', email: 'bo4i@gmil.com', Date:'12-26-2024'},
+    {messageId: '1234', sender: 'Full name', subject: 'Subject is key', phone:'653775159', message:' lorem hey messages are always good to be  the hero of everything, whatsup with everything ', email: 'bo4i@gmil.com', Date:'12-26-2024'},
 ]
 export const assets = {
     

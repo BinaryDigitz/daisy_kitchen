@@ -93,6 +93,7 @@ function ViewOrders() {
           </span>
         </p>
       </div>
+      <div className="border border-green-50 rounded-md text-center p-6 bg-gradient-to-br from-green-50 to-white">
       <p className="text-gray-600 mt-10">Set Order Status</p>
       <div className="flex gap-3 my-5">
         <button
@@ -123,6 +124,7 @@ function ViewOrders() {
         >
           {order?.status === "Canceled" ? "Canceled" : "Cancel"}
         </button>
+      </div>
       </div>
     </div>
   );

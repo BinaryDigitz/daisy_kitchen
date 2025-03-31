@@ -21,7 +21,7 @@ function Sales() {
         <tbody >
             {
                 sales.map(sale =>(
-                    <tr key={sale.month} className='flex cursor-pointer items-center justify-between text-sm md:text-[18px] p-4 hover:bg-red-100 bg-red-50 text-red-950 text-start'>
+                    <tr key={sale.month} className='flex cursor-pointer items-center justify-between text-sm md:text-[16px] p-4 hover:bg-red-100 bg-red-50 text-red-950 text-start'>
                         <td className='text-black'>{sale.month}</td>
                         <td className='text-red-500'>{sale.low.toLocaleString()}.00</td>
                         <td className='text-green-800'>{sale.high.toLocaleString()}.00</td>

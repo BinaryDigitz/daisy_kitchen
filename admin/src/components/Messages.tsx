@@ -22,7 +22,7 @@ function Messages() {
               <tr
                 title="View message"
                 key={message.messageId}
-                className="flex hover:bg-green-100 cursor-pointer items-center justify-between p-4 bg-green-50 border border-green-100 text-green-900 text-md text-center text-sm md:text-[18px] "
+                className="flex hover:bg-green-100 cursor-pointer items-center justify-between p-4 bg-green-50 border border-green-100 text-green-900 text-md text-center text-sm md:text-[16px] "
               >
                 <td>{message.messageId}</td>
                 <td>{message.sender}</td>

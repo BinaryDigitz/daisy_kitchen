@@ -25,9 +25,9 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <aside className="absolute md:hidden top-24 w-full">
+        <aside className="absolut md:hidden top-24 w-full">
           {showSidebar && (
-            <section className={`w-full h-[700px] bg-white`}>
+            <section className={`w-full h-[700px] bg-white z-50`}>
               <Sidebar />
             </section>
           )}

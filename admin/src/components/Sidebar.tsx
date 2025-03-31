@@ -12,7 +12,7 @@ function Sidebar() {
     { name: "Blogs", link: "/blogs" },
   ];
   return (
-    <div className="grid place-content-center">
+    <div className="grid place-content-center w-full h-full">
       <ul className="p-4" onClick={() => setShowSidebar(false)}>
         {navLinks.map((link) => (
           <Link to={link.link} key={link.name} className="">

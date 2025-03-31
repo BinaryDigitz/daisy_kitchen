@@ -7,6 +7,8 @@ export { default as Orders } from "../pages/Orders"
 export { default as Employees } from '../pages/Employees'
 export { default as ViewMessage } from '../pages/ViewMessage'
 export { default as ProductStatus } from '../pages/ProductStatus'
+export { default as ViewOrders } from '../pages/ViewOrders'
+// COMPONENTS
 // COMPONENTS
 export { default as Navbar } from './Navbar'
 export { default as Footer } from './Footer'

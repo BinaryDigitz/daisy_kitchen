@@ -9,8 +9,7 @@ body {
     font-size: 1rem;
     font-family: "Outfit",  Helvetica, sans-serif;
     background: var(--lightgradient-color) no-repeat;
-    height: 100dvh;
-    width: 100dvw;
+   
 }
 
 header nav a.active{

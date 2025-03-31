@@ -9,7 +9,8 @@ import {
   Blogs,
   Sidebar,
   ProductStatus, 
-  ViewMessage
+  ViewMessage,
+  ViewOrders
 } from "./components/exporComp";
 import Products from "./pages/Products";
 import { useContext } from "react";
@@ -40,6 +41,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/product/:productId" element={<ProductStatus />} />
           <Route path="/message/:messageId" element={<ViewMessage />} />
+          <Route path="/orders/:orderId" element={<ViewOrders />} />
         </Routes>
       </main>
       <footer>

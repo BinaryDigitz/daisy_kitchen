@@ -1,48 +1,9 @@
-import type { Order } from "../types";
+import { orders } from "../assets/assets";
 import Title from "../components/Title";
 import YearlySelect from "../components/YearlySelect";
 import { Link } from "react-router-dom";
 
 function Orders() {
-  const orders: Order[] = [
-    {
-      orderId: "1234",
-      sender: "Boris Ayam",
-      status: "Cancel",
-      email: "email@mail.com",
-      date: "02-30-2022",
-      phone: "653775159",
-      orderDetails: [
-        { productName: "Cake1", productQuantity: 2, productPrice: "23,000" },
-        { productName: "Cake2", productQuantity: 2, productPrice: "23,000" },
-      ],
-    },
-    {
-      orderId: "12345",
-      sender: "Ndoh Honour",
-      status: "Pending",
-      email: "email@mail.com",
-      date: "02-30-2023",
-      phone: "653775159",
-      orderDetails: [
-        { productName: "Cake1", productQuantity: 2, productPrice: "23,000" },
-        { productName: "Cake2", productQuantity: 2, productPrice: "23,000" },
-      ],
-    },
-    {
-      orderId: "12346",
-      sender: "Ndoh Germain",
-      status: "Delivered",
-      email: "email@mail.com",
-      date: "02-30-2024",
-      phone: "653775159",
-      orderDetails: [
-        { productName: "Cake1", productQuantity: 2, productPrice: "23,000" },
-        { productName: "Cake3", productQuantity: 2, productPrice: "23,000" },
-      ],
-    },
-  ];
-  
   return (
     <div className="grid place-items-center mb-10">
       <Title text1="" text2="ORDERS" size="heading3 text-red-900" />
@@ -64,7 +25,15 @@ function Orders() {
                 <tr className="flex text-sm hover:bg-green-100 cursor-pointer  items-center justify-between p-4  border border-green-100 text-green-900 text-md text-center  md:text-[16px]">
                   <td>{index + 1}</td>
                   <td>{order.sender}</td>
-                  <td className={`${ (order.status === 'Delivered' )  ? 'text-green-500' : 'text-gray-500' } ${order.status=== 'Cancel' ? 'text-red-500' : ''}`}>{order.status}</td>
+                  <td
+                    className={`${
+                      order.status === "Delivered"
+                        ? "text-green-500"
+                        : "text-gray-500"
+                    } ${order.status === "Cancel" ? "text-red-500" : ""}`}
+                  >
+                    {order.status}
+                  </td>
                   <td>{order.date}</td>
                   <td>{order.phone}</td>
                 </tr>

@@ -1,3 +1,4 @@
+import type { Order } from '../types'
 
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
@@ -54,3 +55,42 @@ export const myProducts = [
     { name:'Magarita', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '123445', images:[forever]},
     { name:'Greek delight', description: 'This is a nice bread', category: 'Flour', score:'4.5', _id: '1234456', images:[]},
   ]
+  
+  export const orders: Order[] = [
+    {
+      orderId: "1234",
+      sender: "Boris Ayam",
+      status: "Cancel",
+      email: "email@mail.com",
+      date: "02-30-2022",
+      phone: "653775159",
+      orderDetails: [
+        { productName: "Cake1", productQuantity: 2, productPrice: "21000" },
+        { productName: "Cake2", productQuantity: 2, productPrice: "23600" },
+      ],
+    },
+    {
+      orderId: "12345",
+      sender: "Ndoh Honour",
+      status: "Pending",
+      email: "email@mail.com",
+      date: "02-30-2023",
+      phone: "653775159",
+      orderDetails: [
+        { productName: "Cake1", productQuantity: 2, productPrice: "53000" },
+        { productName: "Cake2", productQuantity: 2, productPrice: "43000" },
+      ],
+    },
+    {
+      orderId: "12346",
+      sender: "Ndoh Germain",
+      status: "Delivered",
+      email: "email@mail.com",
+      date: "02-30-2024",
+      phone: "653775159",
+      orderDetails: [
+        { productName: "Cake1", productQuantity: 2, productPrice: "23000" },
+        { productName: "Cake3", productQuantity: 2, productPrice: "234000" },
+      ],
+    },
+  ];

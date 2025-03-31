@@ -60,7 +60,7 @@ export const myProducts = [
     {
       orderId: "1234",
       sender: "Boris Ayam",
-      status: "Cancel",
+      status: "Canceled",
       email: "email@mail.com",
       date: "02-30-2022",
       phone: "653775159",

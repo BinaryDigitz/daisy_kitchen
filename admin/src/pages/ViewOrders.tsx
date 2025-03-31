@@ -3,6 +3,7 @@ import { orders } from "../assets/assets";
 import { useEffect, useState } from "react";
 import type { Order } from "../types";
 import Title from "../components/Title";
+import { toast } from "react-toastify";
 
 function ViewOrders() {
   const [order, setOrder] = useState<Order>();
@@ -12,7 +13,18 @@ function ViewOrders() {
     order?.orderDetails.reduce((total, current) => {
       return (total += Number.parseInt(current.productPrice));
     }, 0);
-
+  const disablePendingButton =
+    order?.status === "Delivered" || order?.status === "Canceled";
+  const disableDeliveredButton =
+    order?.status === "Canceled" || order?.status === "Delivered";
+  const disableCancelButton =
+    order?.status === "Delivered" || order?.status === "Canceled";
+  async function handleDeliveredProducts() {
+    toast.success("Order Delivered successfully");
+  }
+  async function handleCanceledProducts() {
+    toast.warning("Order Canceled successfully");
+  }
   useEffect(() => {
     const foundOrder = orders.find((order) => order.orderId === orderId);
     setOrder(foundOrder);
@@ -41,7 +53,7 @@ function ViewOrders() {
                 order?.status === "Delivered"
                   ? "text-green-500"
                   : "text-gray-500"
-              } ${order?.status === "Cancel" ? "text-red-500" : ""}`}
+              } ${order?.status === "Canceled" ? "text-red-500" : ""}`}
             >
               {order?.status}
             </span>
@@ -83,10 +95,33 @@ function ViewOrders() {
       </div>
       <p className="text-gray-600 mt-10">Set Order Status</p>
       <div className="flex gap-3 my-5">
-        <button className="text-gray-800 border px-6 py-2 rounded-sm shadow cursor-pointer hover:bg-gray-100 trans shadow-gray-300 border-gray-200">Pending</button>
-        <button className={`text-green-800 border px-6 py-2 rounded-sm shadow cursor-pointer ${order?.status === 'Delivered' ? 'bg-green-300' : 'hover:bg-green-100 '} trans shadow-green-200 border-green-100`}>Delivered</button>
-        <button className={`text-red-800 border px-6 py-2 rounded-sm shadow cursor-pointer ${order?.status === 'Cancel' ? 'bg-red-300' : 'hover:bg-red-100 '} trans shadow-red-200 border-red-100`}>
-          Cancel
+        <button
+          disabled={disablePendingButton}
+          className="text-gray-800 border disabled:opacity-45 px-6 py-2 rounded-sm shadow cursor-pointer hover:bg-gray-100 trans shadow-gray-300 border-gray-200"
+        >
+          {order?.status === "Pending" ? "Pending" : "Done"}
+        </button>
+        <button
+          disabled={disableDeliveredButton}
+          onClick={handleDeliveredProducts}
+          className={`text-green-800 border disabled:opacity-45 px-6 py-2 rounded-sm shadow cursor-pointer ${
+            order?.status === "Delivered"
+              ? "bg-green-500 text-white"
+              : "hover:bg-green-100 "
+          } trans shadow-green-200 border-green-100 `}
+        >
+          {order?.status === "Delivered" ? "Delivered" : "Deliver"}
+        </button>
+        <button
+          disabled={disableCancelButton}
+          onClick={handleCanceledProducts}
+          className={`text-red-800 border disabled:opacity-45 px-6 py-2 rounded-sm shadow cursor-pointer ${
+            order?.status === "Canceled"
+              ? "bg-red-500 text-white"
+              : "hover:bg-red-100 "
+          } trans shadow-red-200 border-red-100`}
+        >
+          {order?.status === "Canceled" ? "Canceled" : "Cancel"}
         </button>
       </div>
     </div>

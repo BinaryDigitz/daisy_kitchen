@@ -30,7 +30,7 @@ function Orders() {
                       order.status === "Delivered"
                         ? "text-green-500"
                         : "text-gray-500"
-                    } ${order.status === "Cancel" ? "text-red-500" : ""}`}
+                    } ${order.status === "Canceled" ? "text-red-500" : ""}`}
                   >
                     {order.status}
                   </td>

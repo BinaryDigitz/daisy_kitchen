@@ -10,3 +10,18 @@ export interface ProductType{
   alergies?: string
   images: string[]
 }
+export interface OrderDetail{
+  productName:string,
+  productQuantity: number,
+  productPrice: string
+
+}
+export interface Order{
+orderId:string;
+sender: string;
+email:string;
+date:string;
+status: string;
+phone:string;
+orderDetails: OrderDetail[]
+}

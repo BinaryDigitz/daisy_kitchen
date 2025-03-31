@@ -31,6 +31,8 @@ export interface Employee{
   position:string;
   salary:number;
   email:string;
+  dateOfBirth:string;
+  dateOfEmployement:string;
   phone:string;
   photo:string;
   qualification:string

@@ -10,7 +10,8 @@ import {
   Sidebar,
   ProductStatus, 
   ViewMessage,
-  ViewOrders
+  ViewOrders,
+  ViewEmployee
 } from "./components/exporComp";
 import Products from "./pages/Products";
 import { useContext } from "react";
@@ -42,6 +43,7 @@ function App() {
           <Route path="/product/:productId" element={<ProductStatus />} />
           <Route path="/message/:messageId" element={<ViewMessage />} />
           <Route path="/orders/:orderId" element={<ViewOrders />} />
+          <Route path="/employees/:employeeId" element={<ViewEmployee />} />
         </Routes>
       </main>
       <footer>

@@ -2,15 +2,17 @@ import { useState } from "react";
 import { employees } from "../assets/assets";
 import EmployeeForm from "../components/EmployeeForm";
 import Title from "../components/Title";
+import { Link } from "react-router-dom";
 
 function Employees() {
-  const [showForm, setShowForm] = useState(true);
+  const [showForm, setShowForm] = useState(false);
   return (
     <div className="grid place-items-center mt-10 relative">
       <Title text1="" text2="EMPLOYEES" size="heading3 text-red-900" />
       <button
         onClick={() => setShowForm(!showForm)}
-        className="absolute top-5 left-5 border px-6 py-1 cursor-pointer hover:opacity-70 rounded-sm border-red-200 text-red-900"
+        className="absolute top-5 left-5 border px-6 py-1 cursor-pointer 
+        hover:opacity-70 rounded-sm border-red-200 text-red-900 shadow-sm shadow-red-200"
       >
         {showForm ? "Hide form" : "Add Employee"}
       </button>
@@ -30,16 +32,18 @@ function Employees() {
           </thead>
           <tbody>
             {employees.map((employee, index) => (
-              <tr
-                className="flex font-medium hover:bg-green-100 cursor-pointer items-center justify-between lg:px-10 p-4 border border-green-100 text-green-900 text-md  text-sm md:text-[16px]"
-                key={employee.employeeId}
-              >
-                <td>{index + 1}</td>
-                <td>{employee.name}</td>
-                <td>{employee.position}</td>
-                <td>{employee.email}</td>
-                <td>{employee.salary.toLocaleString()}.00</td>
-              </tr>
+              <Link to={`/employees/${employee.employeeId}`}>
+                <tr
+                  className="flex font-medium hover:bg-green-100 cursor-pointer items-center justify-between lg:px-10 p-4 border border-green-100 text-green-900 text-md  text-sm md:text-[16px]"
+                  key={employee.employeeId}
+                >
+                  <td>{index + 1}</td>
+                  <td>{employee.name}</td>
+                  <td>{employee.position}</td>
+                  <td>{employee.email}</td>
+                  <td>{employee.salary.toLocaleString()}.00</td>
+                </tr>
+              </Link>
             ))}
           </tbody>
         </table>

@@ -7,6 +7,7 @@ function AdminProvider({ children }) {
 
   
 const [ showSidebar , setShowSidebar ] = useState(false);
+const [ isLoading, setLoading ] = useState(false)
 const [ products, setProducts ] = useState<ProductType[]>([
   {
     name: "",
@@ -19,7 +20,6 @@ const [ products, setProducts ] = useState<ProductType[]>([
     images:[]
   }
 ]);
-const [ isLoading, setLoading ] = useState(false)
 
  function clearToggles (){
   setShowSidebar(false)

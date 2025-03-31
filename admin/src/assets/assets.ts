@@ -1,4 +1,5 @@
 import type { Order } from '../types'
+import type { Employee } from '../types'
 
 import hero_img from './hero_img.png'
 import cart_icon from './cart_icon.png'
@@ -93,4 +94,11 @@ export const myProducts = [
         { productName: "Cake3", productQuantity: 2, productPrice: "234000" },
       ],
     },
+  ];
+
+export const employees : Employee[] = [
+    {employeeId: '1234', name:'Boris', position: 'Admin', salary:200000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '12345', name:'Ayam', position: 'Baker', salary:100000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '12346', name:'Honour', position: 'Secetary', salary:130000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '12347', name:'Germain', position: 'Security', salary:70000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
   ];

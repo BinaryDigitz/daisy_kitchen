@@ -32,7 +32,11 @@ function ViewEmployee() {
       />
       <div>
         <div className="flex gap-3 lg:gap-5 flex-col  lg:flex-row items-center">
-          <img src="" className="bg-red-100 h-62 w-52 lg:w-58 lg:h-[295px] rounded-sm" alt="" />
+          <img
+            src=""
+            className="bg-red-100 h-62 w-52 lg:w-58 lg:h-[295px] rounded-sm"
+            alt=""
+          />
           <article className="bg-gradient-to-r from-green-50 w-md lg:w-xl border my-5 border-green-100 rounded-sm p-5 flex flex-col gap-2">
             <p className="flex gap-4 text-gray-500">
               Employee ID:
@@ -66,6 +70,14 @@ function ViewEmployee() {
                 {employee?.dateOfEmployement}
               </span>
             </p>
+            {employee?.dateOfTermination.length !== 0 && (
+              <p className="flex gap-9 text-gray-500 ">
+                Date of Termination:
+                <span className="text-red-800">
+                  {employee?.dateOfTermination}
+                </span>
+              </p>
+            )}
             <p className="flex gap-21 text-gray-500">
               Date of Birth:
               <span className="text-gray-800">{employee?.dateOfBirth}</span>

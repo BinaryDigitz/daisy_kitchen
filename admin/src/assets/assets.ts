@@ -97,8 +97,8 @@ export const myProducts = [
   ];
 
 export const employees : Employee[] = [
-    {employeeId: '1234', name:'Boris', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', position: 'Admin', salary:200000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
-    {employeeId: '12345', name:'Ayam', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', position: 'Baker', salary:100000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
-    {employeeId: '12346', name:'Honour', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', position: 'Secetary', salary:130000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
-    {employeeId: '12347', name:'Germain', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', position: 'Security', salary:70000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '1234', name:'Boris', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', dateOfTermination:'', position: 'Admin', salary:200000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '12345', name:'Ayam', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', dateOfTermination:'', position: 'Baker', salary:100000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '12346', name:'Honour', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', dateOfTermination:'', position: 'Secetary', salary:130000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
+    {employeeId: '12347', name:'Germain', dateOfBirth:'02-27-1996', dateOfEmployement:'05-23-2022', dateOfTermination:'04-11-2023', position: 'Security', salary:70000, email: 'email@gmail.com', phone:'653775159', photo:'http://cloudinary/images/?empoyees?=1', qualification: 'loremadfhasdfhalfhdflhdsfl'},
   ];

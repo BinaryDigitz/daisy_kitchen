@@ -33,6 +33,7 @@ export interface Employee{
   email:string;
   dateOfBirth:string;
   dateOfEmployement:string;
+  dateOfTermination:string;
   phone:string;
   photo:string;
   qualification:string

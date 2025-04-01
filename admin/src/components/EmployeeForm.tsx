@@ -1,6 +1,14 @@
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { toast } from "react-toastify";
 
+interface Image{
+ name:string;
+ lastModified: number;
+ lastModifiedDate: Date;
+webkitRelativePath:string;
+size:number;
+type:string
+}
 function EmployeeForm() {
   const [employee, setEmployee] = useState({
     name: "",
@@ -9,30 +17,53 @@ function EmployeeForm() {
     email: "",
     salary: "",
     qualification: "",
+    image:'',
   });
-  function clearForm(){
+  function clearForm() {
     setEmployee({
-        name: "",
-        phone: "",
-        position: "",
-        email: "",
-        salary: "",
-        qualification: "",
-      })
+      name: "",
+      phone: "",
+      position: "",
+      email: "",
+      salary: "",
+      qualification: "",
+    });
   }
-  async function handleFormSubmit(event:FormEvent){
+  async function handleFormSubmit(event: FormEvent) {
     event?.preventDefault();
     console.log(employee);
-    
-    // clear 
-    toast.success('Employee added successfully')
-    clearForm()
+
+    // clear
+    toast.success("Employee added successfully");
+    clearForm();
   }
   return (
-    <form 
-    onSubmit={handleFormSubmit}
-     className="my-10 border border-red-100 rounded-sm p-5 w-full overflow-hidden">
+    <form
+      onSubmit={handleFormSubmit}
+      className="my-10 border border-red-100 rounded-sm p-5 w-full overflow-hidden"
+    >
       <h2 className="mx-auto w-30 my-5 text-red-900 font-bold">ADD EMPLOYEE</h2>
+
+      <div className="mb-3">
+        <label htmlFor="image" className="cursor-pointer">
+          <input
+            type="file"
+            id="image"
+            onChange={(e: ChangeEvent<HTMLInputElement>) => { 
+              console.table(e?.target?.files[0]);
+              
+              setEmployee({ ...employee, image: e?.target?.files[0] })
+            }}
+            hidden
+          />
+          <img
+            src={employee.image ? URL.createObjectURL(employee.image) : ""}
+            className="size-16 w-24 h-26 md:size-20 border border-red-200 rounded-sm  mx-auto"
+            alt=""
+          />
+        </label>
+      </div>
+
       <input
         type="text"
         placeholder="Full Name"
@@ -89,7 +120,9 @@ function EmployeeForm() {
         type="text"
         required
         value={employee.qualification}
-        onChange={e => setEmployee({...employee, qualification: e.target.value})}
+        onChange={(e) =>
+          setEmployee({ ...employee, qualification: e.target.value })
+        }
         placeholder="Qualification"
         className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3 w-full"
       />

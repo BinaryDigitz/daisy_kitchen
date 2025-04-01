@@ -15,7 +15,7 @@ function Kitchen( {data, onFilter, filterProduct}: Props) {
    <FilterProducts filterProduct={filterProduct} onFilter={onFilter}/>
     
    </div>
-   <div className="  min-h-14 text-xl lg:text-3xl font-bold text-[var(--primary-color)] p-2 px-7 agu-font">
+   <div className=" mt-8 min-h-14 text-xl lg:text-3xl font-bold text-[var(--primary-color)] p-2 px-7 agu-font">
     {
       heading || "Definitely, you are in the right place"
     }

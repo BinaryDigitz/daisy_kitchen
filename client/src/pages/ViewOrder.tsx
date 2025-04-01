@@ -46,7 +46,7 @@ function ViewOrder() {
       <div>
         <table className="mt-14 mx-auto w-[90%] lg:w-4/5 border-b">
           <thead className="">
-            <tr className="flex text-start font-bold justify-between py-2 px-3 gap-4 bg-red-50 text-red-950">
+            <tr className="flex text-start font-bold justify-between bg-red-100 py-2 px-3 gap-4 bg-red-50 text-red-950">
               <td>ORDER ID</td>
               <td>ITEM</td>
               <td>PRICE</td>
@@ -56,7 +56,7 @@ function ViewOrder() {
             {order.products.map((item) => (
               <tr
                 key={item.productId}
-                className="hover:bg-red-50 flex text-start justify-between py-2 px-3 gap-4 bg-white text-red-950"
+                className="hover:bg-red-50 flex text-start justify-between py-2 bg-red-50 px-3 gap-4 hover:bg-red-100 text-red-950"
               >
                 <td className="text-gray-500">{item.productId}</td>
                 <td>{item.name}</td>
@@ -68,12 +68,12 @@ function ViewOrder() {
         <div>
           <p className="mt-8 text-end w-4/5 text-gray-500">
             Total amount:
-            <span className="font-bold text-gray-800">
+            <span className="font-bold text-green-800">
               {" " + amount.toLocaleString()}.00
             </span>
           </p>
           <p className="text-sm mt-8 w-4/5 underline text-end">
-            <span className="w-40 bg-red-50 p-3 ">Download order PDF</span>
+            <span title="download file" className="w-40 bg-red-50 p-3 cursor-pointer">Download order PDF</span>
           </p>
         </div>
       </div>

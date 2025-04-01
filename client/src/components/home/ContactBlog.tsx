@@ -13,14 +13,16 @@ function ContactBlog() {
         </p>
       </Link>
 
-      <div className="flex flex-col lg:flex-row justify-around pt-6 gap-10 md:gap-0 md:p-0 ">
-        <ContactCard />
+      <div className="flex flex-col lg:flex-row borde justify-around pt-6  md:gap-0 md:pr-10 ">
+        <div>
+          <ContactCard />
+        </div>
         <NewsLetter />
       </div>
       <Link to="/contact">
         <button
           title="Contact us"
-          className="button1 border text-sm border-[var(--secondary-color)] my-10 text-[var(--secondary-color)] shadow-sm hover:opacity-80 hover:bg-[var(--secondary-color)] hover:text-white trans p-3  m-6 rounded-md px-8"
+          className="button1 border text-sm border-[var(--secondary-color)] my-10 text-[var(--secondary-color)] cursor-pointer shadow-lg shadow-red-200 hover:opacity-80 hover:bg-[var(--secondary-color)] hover:text-white trans p-3  m-6 rounded-md px-8"
         >
           CONTACT US
         </button>

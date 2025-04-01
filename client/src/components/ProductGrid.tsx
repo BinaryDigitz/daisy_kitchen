@@ -6,7 +6,7 @@ interface Props{
 }
 function ProductGrid({data}: Props) {
 
-    return <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-4 p-4 place-items-center px-3'>
+    return <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4   gap-4 gap-y-10 p-4 place-items-center px-3'>
         {
             data.map(product => <ProductCard key={product.id} product={product} />)
         }

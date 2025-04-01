@@ -4,6 +4,7 @@ import Title from "../components/Title";
 import { employees } from "../assets/assets";
 import type { Employee } from "../types";
 import { toast } from "react-toastify";
+import Back from "../components/Back";
 
 function ViewEmployee() {
   const [employee, setEmployee] = useState<Employee>();
@@ -24,7 +25,8 @@ function ViewEmployee() {
     fetchEmployeeDetails();
   }, [employeeId]);
   return (
-    <div className="grid place-items-center">
+    <div className="grid place-items-center relative">
+      <Back link='/employees' styles="left-1 top-1"/>
       <Title
         text1=""
         text2="EMPLOYEE DETAILS"

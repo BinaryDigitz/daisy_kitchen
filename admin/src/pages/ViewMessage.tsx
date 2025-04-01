@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Title from "../components/Title";
 import { messages } from "../assets/assets";
 import { useParams } from "react-router-dom";
+import Back from "../components/Back";
 
 interface MessageProps {
   messageId: string;
@@ -24,7 +25,8 @@ function ViewMessage() {
     fetchMessage();
   }, [messageId]);
   return (
-    <div className="mb-24">
+    <div className="mb-24 relative">
+      <Back link='/' styles="top-1 left-1" />
       <div>
         <Title text1="" text2="MESSAGE STATUS" size="heading3 text-green-900" />
         <div className="text-center,w-md border mt-10 rounded-sm border-green-300 p-2 px-4 bg-green-50 lg:w-lg mx-auto">

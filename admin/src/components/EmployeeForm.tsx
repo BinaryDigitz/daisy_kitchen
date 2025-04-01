@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+import { toast } from "react-toastify";
 
 function EmployeeForm() {
   const [employee, setEmployee] = useState({
@@ -23,13 +24,14 @@ function EmployeeForm() {
     event?.preventDefault();
     console.log(employee);
     
-    // clear form
+    // clear 
+    toast.success('Employee added successfully')
     clearForm()
   }
   return (
     <form 
     onSubmit={handleFormSubmit}
-     className="my-10 border border-red-100 rounded-sm p-6">
+     className="my-10 border border-red-100 rounded-sm p-5 w-full overflow-hidden">
       <h2 className="mx-auto w-30 my-5 text-red-900 font-bold">ADD EMPLOYEE</h2>
       <input
         type="text"
@@ -41,7 +43,7 @@ function EmployeeForm() {
         className="border border-red-100 shadow-sm w-full mb-3 shadow-red-200 outline-none rounded-sm py-1.5 px-3"
       />
 
-      <div className="flex items-center gap-3 mb-3">
+      <div className="flex items-center gap-3 mb-3 ">
         <input
           type="text"
           required
@@ -49,7 +51,7 @@ function EmployeeForm() {
           placeholder="Phone"
           value={employee.phone}
           onChange={(e) => setEmployee({ ...employee, phone: e.target.value })}
-          className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3"
+          className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 w-1/2 px-3"
         />
         <input
           type="text"
@@ -60,7 +62,7 @@ function EmployeeForm() {
             setEmployee({ ...employee, position: e.target.value })
           }
           placeholder="Position"
-          className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3"
+          className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 w-1/2 px-3"
         />
       </div>
       <div className="flex items-center gap-3 mb-3">
@@ -71,7 +73,7 @@ function EmployeeForm() {
           value={employee.email}
           onChange={(e) => setEmployee({ ...employee, email: e.target.value })}
           placeholder="Email"
-          className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3"
+          className="border w-1/2 border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3"
         />
         <input
           type="number"
@@ -80,7 +82,7 @@ function EmployeeForm() {
           value={employee.salary}
           onChange={(e) => setEmployee({ ...employee, salary: e.target.value })}
           placeholder="Salary"
-          className="border border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3"
+          className="border w-1/2 border-red-100 shadow-sm shadow-red-200 outline-none rounded-sm py-1.5 px-3"
         />
       </div>
       <input
